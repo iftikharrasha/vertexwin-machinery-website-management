@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #fff; 
+}
+
+.container{
+	width: 90%;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #2B2D42;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+  
+a {
+    color: #2B2D42;
+    font-weight: 500;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+}
+  
+a:hover, a:focus {
+    color: #D10024;
+    text-decoration: none;
+    outline: none;
+}
+  
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+  
+.title{
+      font-style:normal;
+      font-size: 33px;
+      color: aliceblue;
+      font-family: serif;
+}
+
+/*----------------------------*\
+	Header
+\*----------------------------*/
+
+#header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: steelblue;
+}
+
+.header-logo {
+    float: left;
+    width: 55%;
+    margin-left: 40%;
+}
+
+.hamburger-menu {
+    float: right;
+    padding: 15px 0px;
+}
+  
+.hamburger-menu>div {
+    display: inline-block;
+}
+  
+.hamburger-menu>div>a {
+    display: block;
+    position: relative;
+    width: 90px;
+    text-align: center;
+    color: #FFF;
+}
+  
+.hamburger-menu>div>a>i {
+    display: block;
+    font-size: 18px;
+}
+  
+.hamburger-menu>div>a>span {
+    font-size: 12px;
+}
+  
+.hamburger-menu .menu-toggle {
+    display: none;
+}
+
+/*----------------------------*\
+	Navigation
+\*----------------------------*/
+#navigation {
+    background: transparent;
+    float: right;
+    width: 50%;
+    margin-right: 25%;
+    margin-top: 10px; 
+}
+
+.main-nav>li+li {
+    margin-left: 30px
+}
+  
+.main-nav>li>a {
+    padding: 20px 0px;
+    color: white;
+}
+  
+.main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
+    color: orange; 
+    background-color: transparent;
+}
+  
+.main-nav>li>a:after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: white; 
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+  
+.main-nav>li>a:hover:after, .main-nav>li>a:focus:after, .main-nav>li.active>a:after {
+    width: 100%;
+}
+  
+.header-ctn li.nav-toggle {
+    display: none;
+}
+
+/*----------------------------*\
+	Search
+\*----------------------------*/
+
+.header-search {
+	width: 60%;
+    margin: 0 auto;
+    padding: 10px 0px 55px 0px;
+}
+
+.header-search form {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header-search form .input-select {
+    width: 65%;
+    padding: 0px 15px;
+    background: #FFF;
+    border: 1px solid #E4E7ED;
+    height: 40px;
+}
+
+.header-search form .input {
+  width: calc(100% - 260px);
+  margin-right: -4px;
+}
+
+.header-search form .search-btn {
+  height: 40px;
+  width: 30%;
+  background: royalblue;
+  color: #FFF;
+  font-weight: 700;
+  border: none;
+  border-radius: 0px 40px 40px 0px;
+}
+
+
+/*----------------------------*\
+	Footer
+\*----------------------------*/
+
+#footer {
+    background:royalblue;
+    color: white;
+}
+
+#bottom-footer {
+    background: #7474BF;
+}
+
+.footer-links li a {
+    color: #ffffff;
+}
+
+.footer-links li a:hover {
+    color: #E71C23;
+  }
+  
+.footer {
+    margin: 30px 0px;
+}
+  
+.footer .footer-title {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px 0px 30px;
+}
+  
+.footer-links li+li {
+    margin-top: 15px;
+}
+  
+.footer-links li i {
+    margin-right: 15px;
+    color: orange;
+    width: 14px;
+    text-align: center;
+}
+
+.copyright {
+    display: block;
+    font-size: 12px;
+}
+
+.copyright a{
+    color: orange;
+}
+
+.copyright a:hover{
+    color: deeppink;
+}
+  
+/*----------------------------*\
+	Section
+\*----------------------------*/
+.section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+  
