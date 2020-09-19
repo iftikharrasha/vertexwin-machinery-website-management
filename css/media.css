@@ -52,6 +52,10 @@
       }
   }
 
+/*----------------------------*\
+	Media Devices
+\*----------------------------*/
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
 	.header-search {
@@ -82,7 +86,17 @@
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    .header-logo {
+    .ad {
+	  background: transparent;
+	  padding: 20px;
+	  position: fixed;
+	  width: 200px;
+	  height: 60%;
+	  display: block!important;
+	  top: 10%;
+	}
+
+	.header-logo {
         width: 45%;
         margin-left: 10%;
     }
@@ -92,12 +106,35 @@
         margin-left: 5%;
         margin-right: 0;
     }
-
+	
+	.content {
+		width: 72%;
+	}
+	
+	.content-upped {
+	    margin: -60px 14% -30px 14%;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-
+	.ad {
+	  background: transparent;
+	  padding: 20px;
+	  position: fixed;
+	  width: 200px;
+	  height: 60%;
+	  display: block!important;
+	  top: 10%;
+	}
+	
+	.content {
+		width: 72%;
+	}
+	
+	.content-upped {
+		margin: -60px 14% -30px 14%;
+	}
 }
 
 
