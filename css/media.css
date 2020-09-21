@@ -87,13 +87,13 @@
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     .ad {
-	  background: transparent;
-	  padding: 20px;
-	  position: fixed;
-	  width: 200px;
-	  height: 60%;
-	  display: block!important;
-	  top: 10%;
+      background: transparent;
+      padding: 20px;
+      position: fixed;
+      width: 145px;
+      height: 60%;
+      display: block!important;
+      top: 10%;
 	}
 
 	.header-logo {
