@@ -13,7 +13,7 @@
 
 <div class="content content-upped">
 		
-		<section>
+		<section class="section">
         <!-- container -->
 		<div class="container">
 			<div class="row">
@@ -56,7 +56,7 @@
 		  <!-- container -->
 		  </section>
 		  
-		  <section>
+		  <section class="section">
 		  <!-- container -->
 		  <div class="container">
 				<div class="row">
@@ -155,9 +155,31 @@
 						</a>
 					</div>
 					<!-- /featured -->
+					
+					<div class="col-xs-12">
+						<div class="more-btn">
+							<a href="#"><button type="submit">See All Products</button></a>
+						</div>
+					</div>
 				</div>
 		  </div>
 		  <!-- /container -->
+		  </section>
+		  
+		  <section class="section">
+		   <div class="container">
+				<div class="row">
+					<!-- ad -->
+					<div class="col-xs-12">
+						<div class="ad-inside">
+							<!--<script<span>a d v e r t i s e m e n t</span>
+							</script>-->
+							<img src="./resource/img/banner2.jpg" alt="" style="width: 100%;">
+						</div>
+					</div>
+					<!-- ad -->
+			    </div>
+		  </div>
 		  </section>
 </div>
 		
