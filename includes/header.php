@@ -19,6 +19,10 @@ session_start();
 
 		<!-- Font Awesome Icon -->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>

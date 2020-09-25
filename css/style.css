@@ -376,9 +376,191 @@ ul, ol {
 	outline: none;
 }
   
-  
-  
-  
+/*----------------------------*\
+	New Products
+\*----------------------------*/
+
+.section-title {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+/*----------------------------*\
+	Product
+\*----------------------------*/
+
+.product {
+  position: relative;
+  margin: 15px 0px;
+  box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.product:hover {
+  box-shadow: 0px 0px 0px 2px steelblue;
+}
+
+.product .product-img {
+  position: relative;
+}
+
+.product .product-img>img {
+  width: 100%;
+}
+
+.product .product-img .product-label {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.product .product-img .product-label>span {
+  border: 2px solid;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+.product .product-img .product-label>span.new {
+  background-color: steelblue;
+  border-color: royalblue;
+  color: #FFF;
+}
+
+.product .product-body {
+  position: relative;
+  padding: 15px;
+  background-color: #FFF;
+  text-align: center;
+  z-index: 20;
+}
+
+.product .product-body .product-category {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #8D99AE;
+}
+
+.product .product-body .product-name {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.product .product-body .product-name>a {
+  font-weight: 700;
+}
+
+.product .product-body .product-name>a:hover, .product .product-body .product-name>a:focus {
+  color: #D10024;
+}
+
+.product .product-body .product-rating {
+  position: relative;
+  margin: 15px 0px 10px;
+  height: 20px;
+}
+
+.product .product-body .product-rating>i {
+  position: relative;
+  width: 14px;
+  margin-right: -4px;
+  background: #FFF;
+  color: #E4E7ED;
+  z-index: 10;
+}
+
+.product .product-body .product-rating>i.fa-star {
+  color: steelblue;
+}
+
+.product .product-body .product-rating:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 1px;
+  background-color: #E4E7ED;
+}
+
+/*----------------------------*\
+	Products slick
+\*----------------------------*/
+
+.products-slick .product.slick-slide {
+  margin: 15px;
+}
+
+.products-slick-nav {
+    position: absolute;
+    right: 15px;
+    z-index: 10;
+}
+
+.products-slick-nav .slick-prev, .products-slick-nav .slick-next {
+  position: static;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  width: 20px;
+  height: 20px;
+  display: inline-block !important;
+  margin: 0px 2px;
+}
+
+.products-slick-nav .slick-prev:before, .products-slick-nav .slick-next:before {
+  font-size: 14px;
+}
+
+.products-slick-nav .slick-prev:before, .products-slick-nav .slick-next:before {
+    font-size: 14px;
+}
+
+.slick-prev:before {
+    content: "\f104";
+}
+
+.slick-next:before {
+    content: "\f105";
+}
+.slick-prev:before, .slick-next:before {
+    font-family: FontAwesome;
+    color: #2B2D42;
+}
+
+.slick-prev, .slick-next {
+    border: 1px solid #E4E7ED;
+    background-color: #FFF;
+    border-radius: 50%;
+    z-index: 22;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+/*----------------------------*\
+	slick Dots
+\*----------------------------*/
+.slick-dots li button {
+    background: #4682b400;
+}
+
+.slick-dots li button:before {
+    font-size: 40px;
+    color: black;
+}
+
+.slick-dots li button:before {
+    font-size: 40px;
+    color: steelblue;
+}
+
+
+
+
   
   
   
