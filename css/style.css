@@ -372,6 +372,11 @@ ul, ol {
     border-radius: 40px;
 }
 
+.more-btn button:hover{
+    background: orange;
+    color: black;
+}
+
 .more-btn button:focus{
 	outline: none;
 }
@@ -544,6 +549,7 @@ ul, ol {
 /*----------------------------*\
 	slick Dots
 \*----------------------------*/
+
 .slick-dots li button {
     background: #4682b400;
 }
@@ -558,10 +564,61 @@ ul, ol {
     color: steelblue;
 }
 
+/*----------------------------*\
+	Hot Deals
+\*----------------------------*/
 
+.hot-deal {
+	  text-align: center;
+	  background-image: url(../resource/img/hotdeal.png);
+	  padding: 60px 0px;
+}
 
+.hot-deal .countdown {
+	  margin-bottom: 30px;
+}
 
-  
+.hot-deal .countdown>li {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: steelblue;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.hot-deal .countdown>li>div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.hot-deal .countdown>li>div h3 {
+  color: #FFF;
+  margin-bottom: 0px;
+}
+
+.hot-deal .countdown>li>div span {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.hot-deal p {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.hot-deal .cta-btn {
+  margin-top: 15px;
+}
   
   
   

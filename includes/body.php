@@ -375,5 +375,47 @@
 				</div>
 		  </div>
 		  </section>
+		  
+		  <section class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="hot-deal">
+								<ul class="countdown">
+									<li>
+										<div>
+											<h3>02</h3>
+											<span>Days</span>
+										</div>
+									</li>
+									<li>
+										<div>
+											<h3>10</h3>
+											<span>Hours</span>
+										</div>
+									</li>
+									<li>
+										<div>
+											<h3>34</h3>
+											<span>Mins</span>
+										</div>
+									</li>
+									<li>
+										<div>
+											<h3>60</h3>
+											<span>Secs</span>
+										</div>
+									</li>
+								</ul>
+								<h2 class="text-uppercase">hot deal this week</h2>
+								<p>New Collection Up to 50% OFF</p>
+								<div class="more-btn">
+									<a href="store.php"><button>Shop now</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		  </section>
 </div>
 		
