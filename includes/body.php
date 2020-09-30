@@ -426,162 +426,162 @@
 							<h3>Top selling</h3>
 						</div>
 					</div>
-				</div>
-				<div class="col-xs-12">
-					<div class="products-tabs">
-						<!-- tab -->
-						<div id="tab2" class="tab-pane active">
-							<!-- products-slick -->
-							<div class="products-slick" data-nav="#slick-nav-2">
-							   <!-- products -->
-								<div class="product">
-									<a href="#">
-									  <div class="product-img">
-											<img src="resource/img/bobbintool.jpg" style="max-height: 170px;" alt="">
-											<div class="product-label">
-											  <span class="new">TOP</span>
-											</div>
-									  </div>
-									</a>
-									<div class="product-body">
-										  <p class="product-category">Gadgets
-										  </p>
-										  <h3 class="product-name header-cart-item-name">
-											<a
-											   href="#">sony Headphones
-											</a>
-										  </h3>
-										  <div class="product-rating">
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
+				
+					<div class="col-xs-12">
+						<div class="products-tabs">
+							<!-- tab -->
+							<div id="tab2" class="tab-pane active">
+								<!-- products-slick -->
+								<div class="products-slick" data-nav="#slick-nav-2">
+								   <!-- products -->
+									<div class="product">
+										<a href="#">
+										  <div class="product-img">
+												<img src="resource/img/bobbintool.jpg" style="max-height: 170px;" alt="">
+												<div class="product-label">
+												  <span class="new">TOP</span>
+												</div>
 										  </div>
-									</div>
-								 </div>
-								 <!-- products -->
-								<!-- products -->
-								<div class="product">
-									<a href="#">
-									  <div class="product-img">
-											<img src="resource/img/ballbearing.jpg" style="max-height: 170px;" alt="">
-											<div class="product-label">
-											  <span class="new">TOP</span>
-											</div>
-									  </div>
-									</a>
-									<div class="product-body">
-										  <p class="product-category">Gadgets
-										  </p>
-										  <h3 class="product-name header-cart-item-name">
-											<a
-											   href="#">sony Headphones
-											</a>
-										  </h3>
-										  <div class="product-rating">
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
+										</a>
+										<div class="product-body">
+											  <p class="product-category">Gadgets
+											  </p>
+											  <h3 class="product-name header-cart-item-name">
+												<a
+												   href="#">sony Headphones
+												</a>
+											  </h3>
+											  <div class="product-rating">
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+											  </div>
+										</div>
+									 </div>
+									 <!-- products -->
+									<!-- products -->
+									<div class="product">
+										<a href="#">
+										  <div class="product-img">
+												<img src="resource/img/ballbearing.jpg" style="max-height: 170px;" alt="">
+												<div class="product-label">
+												  <span class="new">TOP</span>
+												</div>
 										  </div>
-									</div>
-								 </div>
-								 <!-- products -->
-								 
-								 <!-- products -->
-								<div class="product">
-									<a href="#">
-									  <div class="product-img">
-											<img src="resource/img/textilecomponents.jpg" style="max-height: 170px;" alt="">
-											<div class="product-label">
-											  <span class="new">TOP</span>
-											</div>
-									  </div>
-									</a>
-									<div class="product-body">
-										  <p class="product-category">Gadgets
-										  </p>
-										  <h3 class="product-name header-cart-item-name">
-											<a
-											   href="#">sony Headphones
-											</a>
-										  </h3>
-										  <div class="product-rating">
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
+										</a>
+										<div class="product-body">
+											  <p class="product-category">Gadgets
+											  </p>
+											  <h3 class="product-name header-cart-item-name">
+												<a
+												   href="#">sony Headphones
+												</a>
+											  </h3>
+											  <div class="product-rating">
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+											  </div>
+										</div>
+									 </div>
+									 <!-- products -->
+									 
+									 <!-- products -->
+									<div class="product">
+										<a href="#">
+										  <div class="product-img">
+												<img src="resource/img/textilecomponents.jpg" style="max-height: 170px;" alt="">
+												<div class="product-label">
+												  <span class="new">TOP</span>
+												</div>
 										  </div>
-									</div>
-								 </div>
-								 <!-- products -->
-								 
-								 <!-- products -->
-								<div class="product">
-									<a href="#">
-									  <div class="product-img">
-											<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
-											<div class="product-label">
-											  <span class="new">TOP</span>
-											</div>
-									  </div>
-									</a>
-									<div class="product-body">
-										  <p class="product-category">Gadgets
-										  </p>
-										  <h3 class="product-name header-cart-item-name">
-											<a
-											   href="#">sony Headphones
-											</a>
-										  </h3>
-										  <div class="product-rating">
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
-											<i class="fa fa-star">
-											</i>
+										</a>
+										<div class="product-body">
+											  <p class="product-category">Gadgets
+											  </p>
+											  <h3 class="product-name header-cart-item-name">
+												<a
+												   href="#">sony Headphones
+												</a>
+											  </h3>
+											  <div class="product-rating">
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+											  </div>
+										</div>
+									 </div>
+									 <!-- products -->
+									 
+									 <!-- products -->
+									<div class="product">
+										<a href="#">
+										  <div class="product-img">
+												<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
+												<div class="product-label">
+												  <span class="new">TOP</span>
+												</div>
 										  </div>
-									</div>
-								 </div>
-								 <!-- products -->
-								 
-								 <!-- products -->
-								<div class="product">
-									<a href="#">
-									  <div class="product-img">
-											<img src="resource/img/spareparts.jpg" style="max-height: 170px;" alt="">
-											<div class="product-label">
-											  <span class="new">TOP</span>
-											</div>
-									  </div>
-									</a>
-									<div class="product-body">
-										  <p class="product-category">Gadgets
-										  </p>
-										  <h3 class="product-name header-cart-item-name">
+										</a>
+										<div class="product-body">
+											  <p class="product-category">Gadgets
+											  </p>
+											  <h3 class="product-name header-cart-item-name">
+												<a
+												   href="#">sony Headphones
+												</a>
+											  </h3>
+											  <div class="product-rating">
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+												<i class="fa fa-star">
+												</i>
+											  </div>
+										</div>
+									 </div>
+									 <!-- products -->
+									 
+									 <!-- products -->
+									<div class="product">
+										<a href="#">
+										  <div class="product-img">
+												<img src="resource/img/spareparts.jpg" style="max-height: 170px;" alt="">
+												<div class="product-label">
+												  <span class="new">TOP</span>
+												</div>
+										  </div>
+										</a>
+										<div class="product-body">
+											  <p class="product-category">Gadgets
+											  </p>
+											  <h3 class="product-name header-cart-item-name">
 											<a
 											   href="#">sony Headphones
 											</a>
@@ -607,6 +607,289 @@
 							<div id="slick-nav-2" class="products-slick-nav"></div>
 						</div>
 						<!-- tab -->
+					</div>
+				</div>
+			 </div>
+		  </div>
+		  </section>
+		  
+		  <section class="section">
+		  <div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="section-title">
+							<h4>Japanese Products</h4>
+							<div class="section-nav">
+								<div id="slick-nav-3" class="products-slick-nav"></div>
+							</div>
+						</div>
+						
+						<div class="products-widget-slick" data-nav="#slick-nav-3">
+							<div class="x1">
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+									
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- product widget -->
+							</div>
+
+							<div class="x2">
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- product widget -->
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="section-title">
+							<h4>Korean Products</h4>
+							<div class="section-nav">
+								<div id="slick-nav-4" class="products-slick-nav"></div>
+							</div>
+						</div>
+						
+						<div class="products-widget-slick" data-nav="#slick-nav-4">
+							<div class="x1">
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+									
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- product widget -->
+							</div>
+
+							<div class="x2">
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- product widget -->
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="section-title">
+							<h4>Chinese Products</h4>
+							<div class="section-nav">
+								<div id="slick-nav-5" class="products-slick-nav"></div>
+							</div>
+						</div>
+						
+						<div class="products-widget-slick" data-nav="#slick-nav-5">
+							<div class="x1">
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+									
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- product widget -->
+							</div>
+
+							<div class="x2">
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- /product widget -->
+
+								<!-- product widget -->
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="resource/img/spareparts.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										
+									</div>
+								</div>
+								<!-- product widget -->
+							</div>
+						</div>
 					</div>
 				</div>
 		  </div>
