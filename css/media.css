@@ -71,11 +71,33 @@
 	#footer {
     font-size: 8px;
     }
+	
+	.newsletter form:before {
+		font-size: 90px;
+		top: 60px;
+		left: -10px;
+	}
+	
+	.newsletter form:after {
+		font-size: 90px;
+		top: -40px;
+		right: -5px;
+	}
+	
+	.newsletter p {
+		font-size: 20px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { 
-
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.newsletter form:before {
+		left: -90px;
+	}
+	
+	.newsletter form:after {
+		right: -65px;
+	}
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -89,6 +111,14 @@
 	
 	.carousel {
 		margin-top: 30px;
+	}
+	
+	.newsletter form:before {
+		left: -90px;
+	}
+	
+	.newsletter form:after {
+		right: -65px;
 	}
 	
 }
@@ -134,7 +164,7 @@
 	  width: 200px;
 	  height: 60%;
 	  display: block!important;
-	  top: 23%;
+	  top: 10%;
 	}
 	
 	.content {

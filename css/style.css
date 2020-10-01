@@ -672,7 +672,97 @@ ul, ol {
   color: royalblue;
 }
 
+/*----------------------------*\
+	Newsletter Section
+\*----------------------------*/
+  
+ .newsletter {
+	border-bottom: 3px solid #ffffff;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	text-align: center;
+}
 
-  
-  
+.newsletter p {
+	font-size: 24px;
+}
+
+.newsletter form {
+	position: relative;
+	max-width: 520px;
+	margin: 30px auto;
+}
+
+.newsletter form:before {
+	content: "\f10d";
+	font-family: FontAwesome;
+	position: absolute;
+	font-size: 160px;
+	color: #E4E7ED;
+	top: 15px;
+	-webkit-transform: translateY(-50%) rotate(15deg);
+	-ms-transform: translateY(-50%) rotate(15deg);
+	transform: translateY(-50%) rotate(15deg);
+	z-index: -1;
+	left: -110px;
+}
+
+.newsletter form:after {
+	content: "\f10e";
+	font-family: FontAwesome;
+	position: absolute;
+	font-size: 160px;
+	color: #E4E7ED;
+	top: 15px;
+	-webkit-transform: translateY(-50%) rotate(15deg);
+	-ms-transform: translateY(-50%) rotate(15deg);
+	transform: translateY(-50%) rotate(15deg);
+	z-index: -1;
+	right: -110px;
+}
+
+.newsletter form .input {
+  width: calc(100% - 160px);
+  height: 40px;
+  margin-right: -4px;
+  border: 1px solid #E4E7ED;
+  text-indent: 2%;
+}
+
+.newsletter form .newsletter-btn {
+  width: 160px;
+  height: 40px;
+  font-weight: 700;
+  background: steelblue;
+  color: #FFF;
+  border: none;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.newsletter form .newsletter-btn:hover {
+	background-color: orange;
+}
+
+.newsletter .newsletter-follow li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.newsletter .newsletter-follow li a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #E4E7ED;
+  background-color: #FFF;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.newsletter .newsletter-follow li a:hover, .newsletter .newsletter-follow li a:focus {
+  background-color: #E4E7ED;
+  color: orange;
+}
   
