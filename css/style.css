@@ -766,12 +766,42 @@ ul, ol {
 }
 
 /*----------------------------*\
-	Products Page: Aside
+	Products Page
 \*----------------------------*/
 
 .aside .aside-title {
   text-transform: uppercase;
   font-size: 18px;
-  margin: 15px 0px 30px;
+  margin: 15px 0px;
 }
-  
+
+.aside .btn-group-vertical .btn{
+	text-align: left;
+}
+
+.product-qty {
+    margin-right: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.product-pagi{
+	float: right;
+}
+
+.product-pagi li{
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #FFF;
+    border: 1px solid #E4E7ED;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.pad{
+	padding: 15px;
+}
