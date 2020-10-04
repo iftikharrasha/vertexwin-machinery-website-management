@@ -3,7 +3,6 @@ include "includes/header.php";
 include "includes/advertisements.php";
 ?>
 
-
 <div class="content content-upped">
 		
 		<section class="section">
@@ -81,7 +80,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						<div class="col-md-4 col-xs-6">
 							<div class="product">
-								<a href="product.php?p=1">
+								<a href="item.php?p=1">
 									<div class="product-img">
 										<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
 										<div class="product-label">
@@ -107,7 +106,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						<div class="col-md-4 col-xs-6">
 							<div class="product">
-								<a href="product.php?p=1">
+								<a href="item.php?p=1">
 									<div class="product-img">
 										<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
 										<div class="product-label">
@@ -133,7 +132,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						<div class="col-md-4 col-xs-6">
 							<div class="product">
-								<a href="product.php?p=1">
+								<a href="item.php?p=1">
 									<div class="product-img">
 										<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
 										<div class="product-label">
@@ -159,7 +158,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						<div class="col-md-4 col-xs-6">
 							<div class="product">
-								<a href="product.php?p=1">
+								<a href="item.php?p=1">
 									<div class="product-img">
 										<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
 										<div class="product-label">
@@ -185,7 +184,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						<div class="col-md-4 col-xs-6">
 							<div class="product">
-								<a href="product.php?p=1">
+								<a href="item.php?p=1">
 									<div class="product-img">
 										<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
 										<div class="product-label">
@@ -211,7 +210,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						<div class="col-md-4 col-xs-6">
 							<div class="product">
-								<a href="product.php?p=1">
+								<a href="item.php?p=1">
 									<div class="product-img">
 										<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
 										<div class="product-label">
@@ -237,7 +236,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						<div class="col-md-4 col-xs-6">
 							<div class="product">
-								<a href="product.php?p=1">
+								<a href="item.php?p=1">
 									<div class="product-img">
 										<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
 										<div class="product-label">
@@ -263,7 +262,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						<div class="col-md-4 col-xs-6">
 							<div class="product">
-								<a href="product.php?p=1">
+								<a href="item.php?p=1">
 									<div class="product-img">
 										<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
 										<div class="product-label">
@@ -289,7 +288,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						<div class="col-md-4 col-xs-6">
 							<div class="product">
-								<a href="product.php?p=1">
+								<a href="item.php?p=1">
 									<div class="product-img">
 										<img src="resource/img/spindletape.jpg" style="max-height: 170px;" alt="">
 										<div class="product-label">
@@ -329,6 +328,7 @@ include "includes/advertisements.php";
 				</div>
 			</div>
 		</div>
+		<!-- container -->
 		</section>
 		
 		<section class="section">

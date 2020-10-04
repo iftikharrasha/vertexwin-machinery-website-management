@@ -41,7 +41,7 @@ a {
 }
   
 a:hover, a:focus {
-    color: #D10024;
+    color: royalblue;
     text-decoration: none;
     outline: none;
 }
@@ -457,7 +457,7 @@ ul, ol {
 }
 
 .product .product-body .product-name>a:hover, .product .product-body .product-name>a:focus {
-  color: #D10024;
+  color: royalblue;
 }
 
 .product .product-body .product-rating {
@@ -739,7 +739,10 @@ ul, ol {
 }
 
 .newsletter form .newsletter-btn:hover {
-	background-color: orange;
+  background-color: orange;
+  color: white;
+  border-color: orange;
+  padding: 0px 10px 0px 40px;
 }
 
 .newsletter .newsletter-follow li {
@@ -805,3 +808,97 @@ ul, ol {
 .pad{
 	padding: 15px;
 }
+
+/*----------------------------*\
+	Item Page
+\*----------------------------*/
+
+#item-main-img .item-preview {
+  margin: 0px 5px;
+  border: 1px solid #E4E7ED;
+}
+
+.item-preview img {
+    width: 100%;
+}
+
+#item-main-img .zoomImg {
+  background-color: #FFF;
+}
+
+.item-details .item-name {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.item-details .item-links {
+  margin-top: 15px;
+}
+
+.item-details .item-links li a{
+  font-weight: 700;
+}
+
+.item-details .item-links li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.item-details .item-order {
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.item-details .item-order .item-order-btn {
+  position: relative;
+  border: 2px solid transparent;
+  height: 40px;
+  padding: 0 30px;
+  background-color: steelblue;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 40px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.item-details .item-order .item-order-btn:hover {
+  background-color: #FFF;
+  color: orange;
+  border-color: orange;
+  padding: 0px 30px 0px 50px;
+}
+
+.item-details .item-order .item-order-btn:focus {
+  outline: none;
+}
+
+.item-details .item-links li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.item-details .item-links li+li {
+	margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #E4E7ED;
+    background-color: #FFF;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+	
+}
+
+.item-details .item-links li+li:hover {
+  background-color: #E4E7ED;
+  color: orange;
+}
+

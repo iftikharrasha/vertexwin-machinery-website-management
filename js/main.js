@@ -53,5 +53,11 @@
 			appendArrows: $nav ? $nav : false,
 		});
 	});
+	
+	// Product img zoom
+	var zoomMainProduct = document.getElementById('item-main-img');
+	if (zoomMainProduct) {
+		$('#item-main-img .item-preview').zoom();
+	}
 
 })(jQuery);
