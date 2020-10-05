@@ -9,76 +9,80 @@ include "includes/advertisements.php";
         <!-- container -->
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<!-- Categories -->
-					<div class="aside">
-						<h3 class="aside-title">Categories</h3>
-						<div class="btn-group-vertical">
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Bobbin<small class="qty">(5)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Spare<small class="qty">(7)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Reeds<small class="qty">(4)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Caster<small class="qty">(2)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Balloon<small class="qty">(8)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Rubber<small class="qty">(5)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Bearing<small class="qty">(3)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Snail Wire<small class="qty">(3)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Unicutter<small class="qty">(5)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Expander<small class="qty">(7)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Tester/Length Meter<small class="qty">(8)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Other<small class="qty">(7)</small></a>
+				<div class="col-md-3 clearfix">
+					<div class="col-md-12 col-xs-6">
+						<!-- Categories -->
+						<div class="aside">
+							<h3 class="aside-title">Categories</h3>
+							<div class="btn-group-vertical">
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Bobbin<small class="qty">(5)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Spare<small class="qty">(7)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Reeds<small class="qty">(4)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Caster<small class="qty">(2)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Balloon<small class="qty">(8)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Rubber<small class="qty">(5)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Bearing<small class="qty">(3)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Snail Wire<small class="qty">(3)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Unicutter<small class="qty">(5)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Expander<small class="qty">(7)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Tester/Length Meter<small class="qty">(8)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Other<small class="qty">(7)</small></a>
+								</div>
 							</div>
 						</div>
+						<!-- Categories -->
 					</div>
-					<!-- Categories -->
 					
-					<!-- Countries -->
-					<div class="aside">
-						<h3 class="aside-title">Countries</h3>
-						<div class="btn-group-vertical">
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Japan<small class="qty">(5)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">Korea<small class="qty">(7)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">China<small class="qty">(4)</small></a>
-							</div>
-							<div type="button" class="btn navbar-btn category">
-									<a href="#">India<small class="qty">(2)</small></a>
+					<div class="col-md-12 col-xs-6">
+						<!-- Countries -->
+						<div class="aside">
+							<h3 class="aside-title">Countries</h3>
+							<div class="btn-group-vertical">
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Japan<small class="qty">(5)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">Korea<small class="qty">(7)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">China<small class="qty">(4)</small></a>
+								</div>
+								<div type="button" class="btn navbar-btn category">
+										<a href="#">India<small class="qty">(2)</small></a>
+								</div>
 							</div>
 						</div>
+						<!-- Countries -->
 					</div>
-					<!-- Countries -->
 				</div>
 				<div class="col-md-9">
 					<!-- Products -->
 					<div class="get_product">
 						<!-- Item -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="product">
 								<a href="item.php?p=1">
 									<div class="product-img">
@@ -104,7 +108,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						
 						<!-- Item -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="product">
 								<a href="item.php?p=1">
 									<div class="product-img">
@@ -130,7 +134,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						
 						<!-- Item -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="product">
 								<a href="item.php?p=1">
 									<div class="product-img">
@@ -156,7 +160,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						
 						<!-- Item -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="product">
 								<a href="item.php?p=1">
 									<div class="product-img">
@@ -182,7 +186,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						
 						<!-- Item -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="product">
 								<a href="item.php?p=1">
 									<div class="product-img">
@@ -208,7 +212,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						
 						<!-- Item -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="product">
 								<a href="item.php?p=1">
 									<div class="product-img">
@@ -234,7 +238,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						
 						<!-- Item -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="product">
 								<a href="item.php?p=1">
 									<div class="product-img">
@@ -260,7 +264,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						
 						<!-- Item -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="product">
 								<a href="item.php?p=1">
 									<div class="product-img">
@@ -286,7 +290,7 @@ include "includes/advertisements.php";
 						<!-- Item -->
 						
 						<!-- Item -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="product">
 								<a href="item.php?p=1">
 									<div class="product-img">
@@ -335,6 +339,22 @@ include "includes/advertisements.php";
 				<!-- new products -->
 					<?php include "includes/topproducts.php"; ?>
 				<!-- new products -->
+		</section>
+		
+		<section class="section">
+		   <div class="container">
+				<div class="row">
+					<!-- ad -->
+					<div class="col-xs-12">
+						<div class="ad-inside">
+							<!--<script<span>a d v e r t i s e m e n t</span>
+							</script>-->
+							<img src="./resource/img/banner2.jpg" alt="" style="width: 100%;">
+						</div>
+					</div>
+					<!-- ad -->
+			    </div>
+		  </div>
 		</section>
 		  
 		<section class="section">

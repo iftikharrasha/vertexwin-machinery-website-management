@@ -87,6 +87,18 @@
 	.newsletter p {
 		font-size: 20px;
 	}
+	
+	.founded{
+		margin-top: 35px;
+	}
+
+	.founded h2{
+		font-size: 22px;
+	}
+	
+	.founder {
+		font-size: 14px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -97,6 +109,14 @@
 	
 	.newsletter form:after {
 		right: -65px;
+	}
+	
+	.founded{
+		margin-top: 35px;
+	}
+
+	.founded h2{
+		font-size: 26px;
 	}
 }
 
@@ -119,6 +139,14 @@
 	
 	.newsletter form:after {
 		right: -65px;
+	}
+	
+	.founded{
+		margin-top: 35px;
+	}
+
+	.founded h2{
+		font-size: 26px;
 	}
 	
 }

@@ -34,7 +34,7 @@ include "includes/advertisements.php";
 						
 						<div class="item-order">
 							<div class="btn-group">
-								<button class="item-order-btn" pid="#"  id="product" ><i class="fa fa-shopping-cart"></i> Order</button>
+								<a href="contact.php"><button class="item-order-btn" pid="#"  id="product" ><i class="fa fa-shopping-cart"></i> Order</button></a>
                             </div>
 						</div>
 							
@@ -50,6 +50,22 @@ include "includes/advertisements.php";
 			</div>
 		</div>
 		<!-- container -->
+	</section>
+	
+	<section class="section">
+		   <div class="container">
+				<div class="row">
+					<!-- ad -->
+					<div class="col-xs-12">
+						<div class="ad-inside">
+							<!--<script<span>a d v e r t i s e m e n t</span>
+							</script>-->
+							<img src="./resource/img/banner2.jpg" alt="" style="width: 100%;">
+						</div>
+					</div>
+					<!-- ad -->
+			    </div>
+		  </div>
 	</section>
 </div>
 

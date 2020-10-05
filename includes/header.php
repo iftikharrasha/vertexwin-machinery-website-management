@@ -63,8 +63,8 @@ session_start();
 									<ul class="main-nav nav navbar-nav">
 										<li class="active"><a href="index.php">Home</a></li>
 										<li><a href="products.php">Products</a></li>
-										<li><a href="store.php">About</a></li>
-										<li><a href="store.php">Contact</a></li>
+										<li><a href="about.php">About</a></li>
+										<li><a href="contact.php">Contact</a></li>
 									<ul>
 								</div>
 								<!-- /responsive-nav -->
