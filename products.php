@@ -46,7 +46,7 @@ include "includes/advertisements.php";
 										<a href="#">Expander<small class="qty">(7)</small></a>
 								</div>
 								<div type="button" class="btn navbar-btn category">
-										<a href="#">Tester/Length Meter<small class="qty">(8)</small></a>
+										<a href="#">Length Meter<small class="qty">(8)</small></a>
 								</div>
 								<div type="button" class="btn navbar-btn category">
 										<a href="#">Other<small class="qty">(7)</small></a>

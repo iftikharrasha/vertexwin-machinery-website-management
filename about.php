@@ -29,9 +29,7 @@ include "includes/advertisements.php";
 						eleifend suscipit. Suspendisse molestie rutrum interdum.</p>
 						<p>Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris. Proin auctor sapien eu lacus congue, tincidunt luctus nisi egestas. Pellentesque venenatis risus id odio ullamcorper commodo. 
 						Mauris pellentesque sapien commodo elit condimentum porta a at purus. Nam vitae odio et augue semper ultrices. Vestibulum ut neque vel elit commodo euismod. Morbi viverra sapien eu sapien ultricies egestas. Mauris porta massa vitae euismod iaculis. Sed finibus enim eu 
-						eleifend suscipit. Suspendisse molestie rutrum interdum. Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris. Proin auctor sapien eu lacus congue, tincidunt luctus nisi egestas. Pellentesque venenatis risus id odio ullamcorper commodo. 
-						Mauris pellentesque sapien commodo elit condimentum porta a at purus. Nam vitae odio et augue semper ultrices. Vestibulum ut neque vel elit commodo euismod. Morbi viverra sapien eu sapien ultricies egestas. Mauris porta massa vitae euismod iaculis. Sed finibus enim eu 
-						eleifend suscipit. Suspendisse molestie rutrum interdum.</p>
+						eleifend suscipit. Suspendisse molestie rutrum interdum. Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris.</p>
 					</div>
 				</div>
 				

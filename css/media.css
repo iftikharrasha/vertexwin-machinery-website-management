@@ -99,6 +99,19 @@
 	.founder {
 		font-size: 14px;
 	}
+	
+	.contact {
+		display: none;
+	}
+	
+	.contact-form {
+		width: 100%;
+		margin-top: 30px;
+	}
+	
+	.contact-form-title {
+		padding-bottom: 25px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -120,7 +133,7 @@
 	}
 }
 
-/* Medium devices (tablets, 768px and up)*/
+/* Medium devices(sm) (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
 	.header-search {
 		width: 80%;
@@ -149,9 +162,29 @@
 		font-size: 26px;
 	}
 	
+	.content {
+		width: 90%;
+	}
+	
+	.content-upped {
+	    margin: -60px 5% -30px 5%;
+	}
+
+	.contact {
+		padding: 135px 60px 120px 30px;
+	}
+
+	.contact-form {
+		width: 90%;
+		margin-top: 30px;
+	}
+
+	.contact-form-title {
+		padding-bottom: 25px;
+	}
 }
 
-/* Large devices (desktops, 992px and up)*/
+/* Large devices(md) (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     .ad {
       background: transparent;
@@ -180,6 +213,18 @@
 	
 	.content-upped {
 	    margin: -60px 14% -30px 14%;
+	}
+
+	.contact {
+		padding: 125px 72px 130px 50px;
+	}
+
+	.contact-form {
+		width: 90%;
+	}
+
+	.contact-form-title {
+		padding-bottom: 25px;
 	}
 }
 

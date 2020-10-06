@@ -918,3 +918,110 @@ ul, ol {
 	text-indent: 60px;
 	padding-bottom: 20px;
 }
+
+/*----------------------------*\
+	Contact Page
+\*----------------------------*/
+
+.contact {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 110px 70px 110px 100px;
+}
+
+.contact-img {
+    width: 296px;
+}
+
+.contact-img img {
+    max-width: 100%;
+}
+
+.contact-form {
+    width: 90%;
+}
+
+.contact-form-title {
+    display: block;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 44px;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.input input {
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+	display: block;
+    width: 100%;
+    background: #e6e6e6;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    outline: none;
+    border: none;
+}
+
+.input textarea {
+    height: 50px;
+    border-radius: 25px;
+	display: block;
+    width: 100%;
+    background: #e6e6e6;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    outline: none;
+    border: none;
+	min-height: 150px;
+    border-radius: 25px;
+    padding: 12px 30px;
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-btn button{
+    min-width: 193px;
+    height: 50px;
+    border-radius: 25px;
+    background: steelblue;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    transition: all 0.4s;
+	outline: none !important;
+    border: none;
+}
+
+.contact-btn button:hover {
+  background-color: orange;
+  color: white;
+  border-color: orange;
+  padding: 0px 10px 0px 40px;
+}
+
+.contact-btn button i {
+    margin-left: 7px;
+    transition: all 0.4s;
+}
