@@ -21,19 +21,19 @@
           </div>
           <ul class="newsletter-follow">
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/Vertex-Win-100826431563339" target="_blank">
                 <i class="fa fa-facebook">
                 </i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" target="_blank">
                 <i class="fa fa-twitter">
                 </i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" target="_blank">
                 <i class="fa fa-instagram">
                 </i>
               </a>

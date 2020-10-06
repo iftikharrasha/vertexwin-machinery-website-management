@@ -53,6 +53,12 @@ include "includes/advertisements.php";
 	</section>
 	
 	<section class="section">
+		<!-- new products -->
+			<?php include "includes/relatedproducts.php"; ?>
+		<!-- new products -->
+	</section>
+	
+	<section class="section">
 		   <div class="container">
 				<div class="row">
 					<!-- ad -->
