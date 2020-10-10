@@ -366,7 +366,7 @@ ul, ol {
 	width: 180px;
     height: 40px;
     font-weight: 700;
-    background: steelblue;
+    background: royalblue;
     color: #FFF;
     border: none;
     border-radius: 40px;
@@ -571,7 +571,7 @@ ul, ol {
 
 .hot-deal {
 	  text-align: center;
-	  background-image: url(../resource/img/hotdeal.png);
+	  background-image: url(../resource/img/hotdeal.jpg);
 	  padding: 60px 0px;
 }
 
@@ -584,7 +584,7 @@ ul, ol {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: steelblue;
+  background: royalblue;
   text-align: center;
   border-radius: 50%;
   margin: 0px 5px;
@@ -1024,4 +1024,76 @@ ul, ol {
 .contact-btn button i {
     margin-left: 7px;
     transition: all 0.4s;
+}
+
+/*----------------------------*\
+	vPanel index
+\*----------------------------*/
+
+.login_wrapper {
+  right: 0px;
+  margin: 0px auto;
+  margin-top: 5%;
+  max-width: 350px;
+  position: relative;
+}
+
+.login_form {
+  z-index: 22;
+}
+
+.login_content {
+  margin: 0 auto;
+  padding: 25px 0 0;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  min-width: 280px;
+}
+
+.login_content form {
+  margin: 20px 0;
+  position: relative;
+}
+
+.login_content h1 {
+  font-size: 25px;
+  line-height: 20px;
+  margin: 10px 0 30px;
+}
+
+.login_content form input[type="email"], .login_content form input[type="password"] {
+  border-radius: 3px;
+  border: 1px solid #c8c8c8;
+  color: #777;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+.login_content div .reset_pass {
+  margin-top: 13px !important;
+  margin-right: 39px;
+  float: right;
+}
+.login_content form div a {
+  font-size: 12px;
+  margin: 10px 15px 0 0;
+}
+
+.login_content .btn-default:hover {
+  text-decoration: none;
+}
+
+a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: 0;
+}
+
+.bridge {
+  border-top: 1px solid #D8D8D8;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.dev{
+  
 }
