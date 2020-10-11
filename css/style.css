@@ -41,7 +41,7 @@ a {
 }
   
 a:hover, a:focus {
-    color: royalblue;
+    color: #28a745;
     text-decoration: none;
     outline: none;
 }
@@ -81,7 +81,7 @@ ul, ol {
 #header {
     padding-top: 15px;
     padding-bottom: 15px;
-    background: royalblue;
+    background: #673DE6;
 }
 
 .header-logo {
@@ -115,7 +115,7 @@ ul, ol {
 .hamburger-menu>div>a>span {
     font-size: 12px;
 }
-  
+ 
 .hamburger-menu .menu-toggle {
     display: none;
 }
@@ -141,7 +141,7 @@ ul, ol {
 }
   
 .main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
-    color: orange; 
+    color: #28a745; 
     background-color: transparent;
 }
   
@@ -195,7 +195,7 @@ ul, ol {
 .header-search form .search-btn {
   height: 40px;
   width: 30%;
-  background: steelblue;
+  background: #28a745;
   color: #FFF;
   font-weight: 700;
   border: none;
@@ -224,7 +224,7 @@ ul, ol {
 \*----------------------------*/
 
 #footer {
-    background:royalblue;
+    background:#673DE6;
     color: white;
 	padding-top: 30px;
 }
@@ -301,7 +301,7 @@ ul, ol {
   bottom: 0;
   left: 0px;
   width: 60%;
-  background-color:steelblue;
+  background-color:#28a745;
   opacity: 0.9;
   -webkit-transform: skewX(-45deg);
   -ms-transform: skewX(-45deg);
@@ -315,7 +315,7 @@ ul, ol {
   bottom: 0;
   left: 1px;
   width: 100%;
-  background-color: steelblue;
+  background-color: #28a745;
   opacity: 0.9;
   -webkit-transform: skewX(-45deg) translateX(-100%);
   -ms-transform: skewX(-45deg) translateX(-100%);
@@ -366,7 +366,7 @@ ul, ol {
 	width: 180px;
     height: 40px;
     font-weight: 700;
-    background: royalblue;
+    background: #28a745;
     color: #FFF;
     border: none;
     border-radius: 40px;
@@ -404,7 +404,7 @@ ul, ol {
 }
 
 .product:hover {
-  box-shadow: 0px 0px 0px 2px steelblue;
+  box-shadow: 0px 0px 0px 2px #28a745;
 }
 
 .product .product-img {
@@ -428,8 +428,8 @@ ul, ol {
 }
 
 .product .product-img .product-label>span.new {
-  background-color: steelblue;
-  border-color: royalblue;
+  background-color: #28a745;
+  border-color: #28a745;
   color: #FFF;
 }
 
@@ -457,7 +457,7 @@ ul, ol {
 }
 
 .product .product-body .product-name>a:hover, .product .product-body .product-name>a:focus {
-  color: royalblue;
+  color: #28a745;
 }
 
 .product .product-body .product-rating {
@@ -476,7 +476,7 @@ ul, ol {
 }
 
 .product .product-body .product-rating>i.fa-star {
-  color: steelblue;
+  color: #28a745;
 }
 
 .product .product-body .product-rating:after {
@@ -562,7 +562,7 @@ ul, ol {
 
 .slick-dots li button:before {
     font-size: 40px;
-    color: steelblue;
+    color: #28a745;
 }
 
 /*----------------------------*\
@@ -584,7 +584,7 @@ ul, ol {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: royalblue;
+  background: #28a745;
   text-align: center;
   border-radius: 50%;
   margin: 0px 5px;
@@ -669,7 +669,7 @@ ul, ol {
 }
 
 .product-widget .product-body .product-name>a:hover, .product-widget .product-body .product-name>a:focus {
-  color: royalblue;
+  color: #28a745;
 }
 
 /*----------------------------*\
@@ -732,7 +732,7 @@ ul, ol {
   width: 160px;
   height: 40px;
   font-weight: 700;
-  background: steelblue;
+  background: #28a745;
   color: #FFF;
   border: none;
   border-radius: 0px 40px 40px 0px;
@@ -855,7 +855,7 @@ ul, ol {
   border: 2px solid transparent;
   height: 40px;
   padding: 0 30px;
-  background-color: steelblue;
+  background-color: #28a745;
   color: #FFF;
   text-transform: uppercase;
   font-weight: 700;
@@ -1001,7 +1001,7 @@ ul, ol {
     min-width: 193px;
     height: 50px;
     border-radius: 25px;
-    background: steelblue;
+    background: #28a745;
     font-size: 15px;
     line-height: 1.5;
     color: #fff;
@@ -1075,6 +1075,7 @@ ul, ol {
   margin-right: 39px;
   float: right;
 }
+
 .login_content form div a {
   font-size: 12px;
   margin: 10px 15px 0 0;
@@ -1094,6 +1095,129 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
   padding-top: 10px;
 }
 
-.dev{
-  
+/*----------------------------*\
+	vPanel sidebar
+\*----------------------------*/
+
+.sidebar-menu {
+    position: fixed;
+    float: left;
+    width: 230px;
+    top: 45px;
+    left: 0;
+    bottom: 0;
+    background-color: #36344d;
+    box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
+    -o-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
+    -moz-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
+    z-index: 999;
+}
+
+.vpanel_menu {
+    text-align: left;
+	 padding: 15px 14px 15px;
+}
+
+#vp_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#vp_menu li {
+    position: relative;
+    border-bottom: 1px ridge rgba(255, 255, 255, 0.04);
+}
+
+#vp_menu li a{
+    font-weight: 400;
+    position: relative;
+    display: block;
+    padding: 13px 20px;
+    color: #fff;
+    white-space: nowrap;
+    z-index: 2;
+    background-color: #36344d;
+    border: none;
+    border-left: 4px solid #333333;
+}
+
+#vp_menu li a:hover {
+	color: #ffffff;
+	background-color:#28a745;
+	transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+	border-left: 4px solid #4A4A4A;
+}
+
+#vp_menu li.active > a {
+	background-color: #2b303a;
+	color: #ffffff;
+}
+
+#vp_menu ul li{
+  background-color: #333333;
+}
+
+#vp_menu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#vp_menu li ul{
+  position: absolute;
+  visibility: hidden;
+  left: 100%;
+  top: -1px;
+  background-color: #2b303a;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.1s linear;
+  border-top: 1px solid rgba(69, 74, 84, 0.7);
+}
+
+#vp_menu li:hover > ul{
+  visibility: visible;
+  opacity: 1;
+}
+
+#vp_menu .fa{
+  margin-right: 5px;
+}
+
+#vp_menu .v_active {
+    background-color: #673DE6;
+}
+
+.md-hl{
+	margin-left: 55%; 
+}
+
+/*----------------------------*\
+	vPanel counts
+\*----------------------------*/
+
+.vpanel_counts {
+    margin: 2%;
+    padding: 2rem 1rem;
+	border: 1px solid #dad9da;
+}
+
+.vpanel_counts:hover{
+    box-shadow: 0 0 15px rgb(177, 171, 171);
+}
+
+.four-grid h3 {
+    font-size: 20px;
+    color: #2f1c6a;
+    margin: 14px 0;
+    font-weight: 400;
+}
+
+.four-grids h4 {
+    font-size: 30px;
+    color: #2f1c6a;
+    margin: 0;
 }

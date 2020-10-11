@@ -6,11 +6,12 @@
     .hamburger-menu .menu-toggle {
       display: inline-block;
     }
+	
     #responsive-nav {
       position: fixed;
       left: 0;
       top: 0;
-      background: #15161D;
+      background: #36344d;
       height: 100vh;
       max-width: 250px;
       width: 0%;
@@ -40,6 +41,8 @@
     .main-nav>li>a {
       padding: 15px;
       color: #FFF;
+	  border-left: 4px solid #333333;
+      border-bottom: 1px ridge rgba(255, 255, 255, 0.04);
     }
     .header-logo {
         float: none;
@@ -47,12 +50,17 @@
         width: 100%;
         margin-left: 0;
       }
+	  
       .header-logo .logo {
         display: inline-block;
       }
 	  
 	  .carousel {
 		margin-top: 30px;
+	}
+	
+	.sidebar-menu {
+		display: none;
 	}
   }
 
@@ -182,6 +190,8 @@
 	.contact-form-title {
 		padding-bottom: 25px;
 	}
+	
+	
 }
 
 /* Large devices(md) (desktops, 992px and up)*/
@@ -226,6 +236,15 @@
 	.contact-form-title {
 		padding-bottom: 25px;
 	}
+	
+	.ham-none{
+		display:none;
+	}
+	
+	.md-hl{
+		margin-left: 55%; 
+	}
+
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -246,6 +265,14 @@
 	
 	.content-upped {
 		margin: -60px 14% -30px 14%;
+	}
+	
+	.ham-none{
+		display:none;
+	}
+	
+	.md-hl{
+		margin-left: 40%; 
 	}
 }
 
