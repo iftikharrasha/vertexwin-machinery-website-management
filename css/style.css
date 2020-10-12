@@ -1221,3 +1221,29 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
     color: #2f1c6a;
     margin: 0;
 }
+
+/*----------------------------*\
+	vPanel Categories
+\*----------------------------*/
+
+.btn-info {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-info:hover {
+    background-color: #673DE6;
+}
+
+/*----------------------------*\
+	vPanel Add Products
+\*----------------------------*/
+
+.cat_dropdown{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.well form p{
+	font-weight: 700;
+}

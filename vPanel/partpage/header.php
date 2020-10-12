@@ -52,17 +52,17 @@ session_start();
                 <div id="responsive-nav">
                   <ul class="main-nav nav navbar-nav ham-none">
                     <li>
-                      <a class="v_active" href="dashboard.php">
+                      <a href="../control/dashboard.php">
                         <i class="fa fa-tachometer">
                         </i> 
-                        <span>Dashboard	
+                        <span class="v_active">Admin Panel	
                         </span>
                         <div class="clearfix">
                         </div>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="../category/categories.php">
                         <i class="fa fa-users">
                         </i>
                         <span>Add Category

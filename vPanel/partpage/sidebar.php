@@ -4,7 +4,7 @@
       <div class="vpanel_menu">
         <ul id="vp_menu">
           <li>
-            <a class="v_active" href="dashboard.php">
+			<a class="v_active" href="../control/dashboard.php">
               <i class="fa fa-tachometer">
               </i> 
               <span>Admin Panel
@@ -26,7 +26,7 @@
             </a>
             <ul>
               <li>
-                <a href="../category/category.php">Add Category
+                <a href="../category/categories.php">Add Category
                 </a>
               </li>
             </ul>
@@ -35,7 +35,7 @@
             <a href="#">
               <i class="fa fa-user">
               </i>
-              <span>Manage Products
+              <span>All Products
               </span>
               <span class="fa fa-angle-right" style="float: right">
               </span>
@@ -62,7 +62,7 @@
             </a>
             <ul>
               <li>
-                <a href="employeeadd.php">Add New Item
+                <a href="../itemadd/additem.php">Add New Item
                 </a>
               </li>
             </ul>
