@@ -1,3 +1,10 @@
+/*
+	#28a745;  green
+	#fc5185; pink
+	#673DE6; blueok
+	#36344d; bluedark
+*/
+
 body {
     margin: 0;
     padding: 0;
@@ -41,7 +48,7 @@ a {
 }
   
 a:hover, a:focus {
-    color: #28a745;
+    color: #673DE6;
     text-decoration: none;
     outline: none;
 }
@@ -141,7 +148,7 @@ ul, ol {
 }
   
 .main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
-    color: #28a745; 
+    color: #fc5185; 
     background-color: transparent;
 }
   
@@ -195,11 +202,18 @@ ul, ol {
 .header-search form .search-btn {
   height: 40px;
   width: 30%;
-  background: #28a745;
+  background: #36344d;
   color: #FFF;
   font-weight: 700;
   border: none;
   border-radius: 0px 40px 40px 0px;
+  transition: all 0.4s;
+}
+
+
+.header-search form .search-btn:hover{
+	background: #fc5185;
+	padding: 0px 10px 0px 40px;
 }
 
 /*----------------------------*\
@@ -238,7 +252,7 @@ ul, ol {
 }
 
 .footer-links li a:hover {
-    color: #E71C23;
+    color: #fc5185;
   }
   
 .footer {
@@ -258,7 +272,7 @@ ul, ol {
   
 .footer-links li i {
     margin-right: 15px;
-    color: orange;
+    color: #fc5185;
     width: 14px;
     text-align: center;
 }
@@ -269,7 +283,7 @@ ul, ol {
 }
 
 .copyright a{
-    color: orange;
+    color: #fc5185;
 }
 
 .copyright a:hover{
@@ -301,7 +315,7 @@ ul, ol {
   bottom: 0;
   left: 0px;
   width: 60%;
-  background-color:#28a745;
+  background-color:#36344d;
   opacity: 0.9;
   -webkit-transform: skewX(-45deg);
   -ms-transform: skewX(-45deg);
@@ -315,7 +329,7 @@ ul, ol {
   bottom: 0;
   left: 1px;
   width: 100%;
-  background-color: #28a745;
+  background-color: #36344d;
   opacity: 0.9;
   -webkit-transform: skewX(-45deg) translateX(-100%);
   -ms-transform: skewX(-45deg) translateX(-100%);
@@ -366,15 +380,16 @@ ul, ol {
 	width: 180px;
     height: 40px;
     font-weight: 700;
-    background: #28a745;
+    background: #673DE6;
     color: #FFF;
     border: none;
     border-radius: 40px;
+	transition: all 0.4s;
 }
 
 .more-btn button:hover{
-    background: orange;
-    color: black;
+    background: #fc5185;
+	padding: 0px 10px 0px 40px;
 }
 
 .more-btn button:focus{
@@ -404,7 +419,7 @@ ul, ol {
 }
 
 .product:hover {
-  box-shadow: 0px 0px 0px 2px #28a745;
+  box-shadow: 0px 0px 0px 2px #673DE6;
 }
 
 .product .product-img {
@@ -428,8 +443,8 @@ ul, ol {
 }
 
 .product .product-img .product-label>span.new {
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #673DE6;
+  border-color: #673DE6;
   color: #FFF;
 }
 
@@ -457,7 +472,7 @@ ul, ol {
 }
 
 .product .product-body .product-name>a:hover, .product .product-body .product-name>a:focus {
-  color: #28a745;
+  color: #673DE6;
 }
 
 .product .product-body .product-rating {
@@ -476,7 +491,7 @@ ul, ol {
 }
 
 .product .product-body .product-rating>i.fa-star {
-  color: #28a745;
+  color: #673DE6;
 }
 
 .product .product-body .product-rating:after {
@@ -562,7 +577,7 @@ ul, ol {
 
 .slick-dots li button:before {
     font-size: 40px;
-    color: #28a745;
+    color: #673DE6;
 }
 
 /*----------------------------*\
@@ -584,7 +599,7 @@ ul, ol {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: #28a745;
+  background: #673DE6;
   text-align: center;
   border-radius: 50%;
   margin: 0px 5px;
@@ -669,7 +684,7 @@ ul, ol {
 }
 
 .product-widget .product-body .product-name>a:hover, .product-widget .product-body .product-name>a:focus {
-  color: #28a745;
+  color: #673DE6;
 }
 
 /*----------------------------*\
@@ -732,16 +747,17 @@ ul, ol {
   width: 160px;
   height: 40px;
   font-weight: 700;
-  background: #28a745;
+  background: #673DE6;
   color: #FFF;
   border: none;
   border-radius: 0px 40px 40px 0px;
+  transition: all 0.4s;
 }
 
 .newsletter form .newsletter-btn:hover {
-  background-color: orange;
+  background-color: #fc5185;
   color: white;
-  border-color: orange;
+  border-color: #fc5185;
   padding: 0px 10px 0px 40px;
 }
 
@@ -765,7 +781,7 @@ ul, ol {
 
 .newsletter .newsletter-follow li a:hover, .newsletter .newsletter-follow li a:focus {
   background-color: #E4E7ED;
-  color: orange;
+  color: #fc5185;
 }
 
 /*----------------------------*\
@@ -855,19 +871,19 @@ ul, ol {
   border: 2px solid transparent;
   height: 40px;
   padding: 0 30px;
-  background-color: #28a745;
+  background-color: #673DE6;
   color: #FFF;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 40px;
   -webkit-transition: 0.2s all;
-  transition: 0.2s all;
+  transition: 0.4s all;
 }
 
 .item-details .item-order .item-order-btn:hover {
   background-color: #FFF;
-  color: orange;
-  border-color: orange;
+  color: #fc5185;
+  border-color: #fc5185;
   padding: 0px 30px 0px 50px;
 }
 
@@ -899,7 +915,7 @@ ul, ol {
 
 .item-details .item-links li+li:hover {
   background-color: #E4E7ED;
-  color: orange;
+  color: #fc5185;
 }
 
 /*----------------------------*\
@@ -1001,7 +1017,7 @@ ul, ol {
     min-width: 193px;
     height: 50px;
     border-radius: 25px;
-    background: #28a745;
+    background: #673DE6;
     font-size: 15px;
     line-height: 1.5;
     color: #fff;
@@ -1015,9 +1031,9 @@ ul, ol {
 }
 
 .contact-btn button:hover {
-  background-color: orange;
+  background-color: #fc5185;
   color: white;
-  border-color: orange;
+  border-color: #fc5185;
   padding: 0px 10px 0px 40px;
 }
 
@@ -1060,6 +1076,7 @@ ul, ol {
   font-size: 25px;
   line-height: 20px;
   margin: 10px 0 30px;
+  color: #673DE6;
 }
 
 .login_content form input[type="email"], .login_content form input[type="password"] {
@@ -1146,7 +1163,7 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
 
 #vp_menu li a:hover {
 	color: #ffffff;
-	background-color:#28a745;
+	background-color:#673DE6;
 	transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
 	border-left: 4px solid #4A4A4A;
 }
@@ -1219,7 +1236,7 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
 
 .four-grids h4 {
     font-size: 30px;
-    color: #2f1c6a;
+	color: #673DE6;
     margin: 0;
 }
 
@@ -1263,4 +1280,11 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
 
 .i1 img {
     max-width: 90%;
+}
+
+#green_dot {
+      width: 10px;
+      height: 10px;
+      background: #28a745;
+      border-radius: 50%
 }

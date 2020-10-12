@@ -30,7 +30,7 @@
                 <input type="password" id="password" name="password" class="form-control" placeholder="Password">
               </div>
               <div>
-                <button type="submit" name="login" class="btn btn-default submit">Log in
+                <button type="submit" name="login" class="btn btn-info submit">Log in
                 </button>
               </div>
               <div class="clearfix">
@@ -41,9 +41,6 @@
                     <i class="fa fa-asterisk">
                     </i> Vertex Win!
                   </h1>
-                  Developed by 
-                  <a href="#iftikharrasha" target="_blank">Iftikhar Rasha
-                  </a>
                 </div>
               </div>
             </form>

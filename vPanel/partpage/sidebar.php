@@ -4,7 +4,7 @@
       <div class="vpanel_menu">
         <ul id="vp_menu">
           <li>
-			<a class="v_active" href="../control/dashboard.php">
+            <a class="v_active" href="../control/dashboard.php">
               <i class="fa fa-tachometer">
               </i> 
               <span>Admin Panel
@@ -15,7 +15,7 @@
           </li>
           <li>
             <a href="#">
-              <i class="fa fa-users">
+              <i class="fa fa-hashtag">
               </i>
               <span>Category
               </span>
@@ -33,7 +33,7 @@
           </li>
           <li>
             <a href="#">
-              <i class="fa fa-user">
+              <i class="fa fa-database">
               </i>
               <span>All Products
               </span>
@@ -51,7 +51,7 @@
           </li>
           <li>
             <a href="#">
-              <i class="fa fa-tasks">
+              <i class="fa fa-plus-circle">
               </i>
               <span>New Item
               </span>
@@ -69,7 +69,7 @@
           </li>
           <li>
             <a href="#">
-              <i class="fa fa-money">
+              <i class="fa fa-envelope">
               </i>
               <span>Orders
               </span>
@@ -86,16 +86,24 @@
             </ul>
           </li>
           <li id="menu-academico">
-            <a href="changepassword.php">
+            <a target="_blank" href="../../index.php">
+              <i class="fa fa-location-arrow">
+              </i>
+              <span>Visit Site
+              </span>
+            </a> 
+          </li>
+          <li id="menu-academico">
+            <a href="../settings/changepass.php">
               <i class="fa fa-cogs">
               </i>
-              <span>Change Password
+              <span>Settings
               </span>
             </a> 
           </li>
           <li>
             <a href="../index.php">
-              <i class="fa fa-money">
+              <i class="fa fa-sign-out">
               </i>
               <span>Logout
               </span>

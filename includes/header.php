@@ -81,7 +81,7 @@ session_start();
 						<!-- SEARCH BAR -->
 						<div class="col-md-12">
 							<div class="header-search">
-								<form action="store.php">
+								<form action="products.php">
 									<select class="input-select">
 										<option value="0">All Categories</option>
 										<option value="1">Bobbin</option>

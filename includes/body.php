@@ -49,14 +49,14 @@
 				<div class="row">
 					<!-- featured -->
 					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<a href="product.php?p=72">
+						<a href="products.php">
 							<div class="featured">
 								<div class="featured-img">
 									<img src="resource/img/textilecomponents.jpg" alt="textile components">
 								</div>
 								<div class="featured-body">
 									<h3>Textile<br>Components</h3>
-									<a href="product.php?p=72" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
+									<a href="products.php" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
 								</div>
 							</div>
 						</a>
@@ -65,14 +65,14 @@
 					
 					<!-- /featured -->
 					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<a href="product.php?p=78">
+						<a href="products.php">
 							<div class="featured">
 								<div class="featured-img">
 									<img src="resource/img/spareparts.jpg" alt="spare parts">
 								</div>
 								<div class="featured-body">
 									<h3>Spare<br>Parts</h3>
-									<a href="product.php?p=78" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
+									<a href="products.php" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
 								</div>
 							</div>
 					    </a>
@@ -81,14 +81,14 @@
 
 					<!-- featured -->
 					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<a href="product.php?p=79">
+						<a href="products.php">
 							<div class="featured">
 								<div class="featured-img">
 									<img src="resource/img/labequipments.jpg" alt="lab equipments">
 								</div>
 								<div class="featured-body">
 									<h3>Lab<br>Equipments</h3>
-									<a href="product.php?p=79" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
+									<a href="products.php" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
 								</div>
 							</div>
 						</a>
@@ -97,14 +97,14 @@
 				
 					<!-- featured -->
 					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<a href="product.php?p=72">
+						<a href="products.php">
 							<div class="featured">
 								<div class="featured-img">
 									<img src="resource/img/bobbintool.jpg" alt="bobbin tool">
 								</div>
 								<div class="featured-body">
 									<h3>Bobbin<br>Tool</h3>
-									<a href="product.php?p=72" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
+									<a href="products.php" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
 								</div>
 							</div>
 						</a>
@@ -113,14 +113,14 @@
 					
 					<!-- /featured -->
 					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<a href="product.php?p=78">
+						<a href="products.php">
 							<div class="featured">
 								<div class="featured-img">
 									<img src="resource/img/spindletape.jpg" alt="spindle tape">
 								</div>
 								<div class="featured-body">
 									<h3>Spindle<br>Tape</h3>
-									<a href="product.php?p=78" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
+									<a href="products.php" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
 								</div>
 							</div>
 					    </a>
@@ -129,14 +129,14 @@
 
 					<!-- featured -->
 					<div class="col-lg-4 col-sm-6 col-xs-12">
-						<a href="product.php?p=79">
+						<a href="products.php">
 							<div class="featured">
 								<div class="featured-img">
 									<img src="resource/img/ballbearing.jpg" alt="ball bearing">
 								</div>
 								<div class="featured-body">
 									<h3>Ball<br>Bearing</h3>
-									<a href="product.php?p=79" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
+									<a href="products.php" class="cta-btn">Order now <i class="fa fa-arrow-circle-right"></i></a>
 								</div>
 							</div>
 						</a>
@@ -145,7 +145,7 @@
 					
 					<div class="col-xs-12">
 						<div class="more-btn">
-							<a href="#"><button type="submit">See All Products</button></a>
+							<a href="products.php"><button type="submit">See All Products</button></a>
 						</div>
 					</div>
 				</div>

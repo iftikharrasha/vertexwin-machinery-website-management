@@ -40,7 +40,7 @@ session_start();
                 <!-- /Menu Toogle -->
               </div>
               <div class="header-logo md-hl">
-                <a href="index.php" class="logo">
+                <a href="../control/dashboard.php" class="logo">
                   <h1 class="title">VertexWin
                   </h1>				
                 </a>
@@ -63,90 +63,82 @@ session_start();
                     </li>
                     <li>
                       <a href="../category/categories.php">
-                        <i class="fa fa-users">
+                        <i class="fa fa-hashtag">
                         </i>
                         <span>Add Category
                         </span>
-                        <span class="fa fa-angle-right" style="float: right">
                         </span>
-                        <div class="clearfix">
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="../allproducts/manageproducts.php">
-                        <i class="fa fa-user">
-                        </i>
-                        <span>All Products
-                        </span>
-                        <span class="fa fa-angle-right" style="float: right">
-                        </span>
-                        <div class="clearfix">
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-tasks">
-                        </i>
-                        <span>Add New Item
-                        </span>
-                        <span class="fa fa-angle-right" style="float: right">
-                        </span>
-                        <div class="clearfix">
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-bell">
-                        </i>
-                        <span>Top Items
-                        </span>
-                        <span class="fa fa-angle-right" style="float: right">
-                        </span>
-                        <div class="clearfix">
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-money">
-                        </i>
-                        <span>Orders
-                        </span>
-                        <span class="fa fa-angle-right" style="float: right">
-                        </span>
-                        <div class="clearfix">
-                        </div>
-                      </a>
-                    </li>
-                    <li id="menu-academico">
-                      <a href="changepassword.php">
-                        <i class="fa fa-cogs">
-                        </i>
-                        <span>Change Password
-                        </span>
-                      </a> 
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-money">
-                        </i>
-                        <span>Logout
-                        </span>
-                        <div class="clearfix">
-                        </div>
-                      </a>
-                    </li>
-                    <ul>
+                      <div class="clearfix">
                       </div>
-                    <!-- /responsive-nav -->
-                    </nav>
-                </div>
-                </div>
-            </div>
+                    </a>
+                  </li>
+                <li>
+                  <a href="../allproducts/manageproducts.php">
+                    <i class="fa fa-database">
+                    </i>
+                    <span>All Products
+                    </span>
+                    </span>
+                  <div class="clearfix">
+                  </div>
+                </a>
+              </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-plus-circle">
+                </i>
+                <span>Add New Item
+                </span>
+                </span>
+              <div class="clearfix">
+              </div>
+            </a>
+          </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-envelope">
+            </i>
+            <span>Orders
+            </span>
+            </span>
+          <div class="clearfix">
           </div>
-          <!-- /MAIN HEADER -->
-          </header>
-        <!-- /HEADER -->
+        </a>
+      </li>
+      <li id="menu-academico">
+            <a target="_blank" href="../../index.php">
+              <i class="fa fa-location-arrow">
+              </i>
+              <span>Visit Site
+              </span>
+            </a> 
+      </li>
+    <li id="menu-academico">
+      <a href="../settings/changepass.php">
+        <i class="fa fa-cogs">
+        </i>
+        <span>Change Password
+        </span>
+      </a> 
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-sign-out">
+        </i>
+        <span>Logout
+        </span>
+        <div class="clearfix">
+        </div>
+      </a>
+    </li>
+    <ul>
+      </div>
+    <!-- /responsive-nav -->
+    </nav>
+  </div>
+</div>
+</div>
+</div>
+<!-- /MAIN HEADER -->
+</header>
+<!-- /HEADER -->
