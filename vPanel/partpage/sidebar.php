@@ -44,7 +44,7 @@
             </a>
             <ul>
               <li>
-                <a href="atten.php">All Products
+                <a href="../allproducts/manageproducts.php">All Products
                 </a>
               </li>
             </ul>
@@ -69,28 +69,6 @@
           </li>
           <li>
             <a href="#">
-              <i class="fa fa-bell">
-              </i>
-              <span>Sort Items
-              </span>
-              <span class="fa fa-angle-right" style="float: right">
-              </span>
-              <div class="clearfix">
-              </div>
-            </a>
-            <ul>
-              <li>
-                <a href="vacancy.php">Top Items
-                </a>
-              </li>
-              <li>
-                <a href="viewvacancy.php"> New Items
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">
               <i class="fa fa-money">
               </i>
               <span>Orders
@@ -102,7 +80,7 @@
             </a>
             <ul>
               <li>
-                <a href="salary.php"> View Orders
+                <a href="../orders/orders.php"> View Orders
                 </a>
               </li>
             </ul>

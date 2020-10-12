@@ -74,7 +74,7 @@ session_start();
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="../allproducts/manageproducts.php">
                         <i class="fa fa-user">
                         </i>
                         <span>All Products

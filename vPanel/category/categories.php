@@ -1,5 +1,5 @@
 <?php include("../partpage/header.php"); ?>
-<div class="container">
+<div class="container-fluid">
   <?php include("../partpage/sidebar.php"); ?>
   <div class="col-md-9 content" style="margin-left:10px">
     <div class="panel panel-default">
@@ -13,8 +13,7 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
 ?>
         </h3>
         <div class="row">
-          <div class="col-md-5 col-xs-12">
-            <div class="well">
+          <div class="col-md-5 col-xs-12 well">
               <h4 class="m-b-0">Add Category
               </h4>
               <form action="../../src/store/cat/catStore.php" enctype="multipart/form-data" method="post" novalidate="novalidate">
@@ -36,10 +35,10 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
                   </button>
                 </div>
               </form>  
-            </div>
+           
           </div>
-          <div class="col-md-7 col-xs-12">
-            <div class="well">
+          <div class="col-md-7 col-xs-12 well">
+           <div class="table-responsive">
               <table width="100%" class="display table table-hover table-striped table-bordered" cellspacing="0">
                 <thead>
                   <tr>
@@ -263,7 +262,7 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
                   </tr>
                 </tbody>
               </table>
-            </div>
+              </div>
           </div>
         </div>
       </div>

@@ -1,10 +1,9 @@
 <?php include("../partpage/header.php"); ?>
 
-<div class="container">
+<div class="container-fluid">
+ <div class="row">
 
 <?php include("../partpage/sidebar.php"); ?>
-
-  <section class="section">
     <div class="col-md-9 content" style="margin-left:10px">
       <div class="panel panel-default">
         <div class="panel-body-boots">
@@ -102,7 +101,7 @@
           </div>
           <div class="col-md-3 four-grid">
             <div class="vpanel_counts c_seven">
-              <a href="leaverequest.php">
+              <a href="../orders/orders.php">
                 <div class="four-text">
                   <h3>Orders
                   </h3>
@@ -128,8 +127,49 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-12">
+		<div class="table-responsive">
+			<table class="display table table-hover table-striped table-bordered" id="dataTable" width="100%" cellspacing="0">
+				
+					<tbody>
+					    <tr>
+							<th>Mail No.</th>
+							<th>Date time</th>
+							<th>Mail</th>
+                            <th>Query</th>
+					    </tr>
+
+							
+					    <tr>
+							<td>1</td>
+							<td>2020-09-16 09:46:20</td>
+							<td>someonemailed@gmail.com</td>
+							<td>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</td>
+
+            
+              
+              </tr>
+              
+							  
+					    <tr>
+							<td>2</td>
+							<td>2020-09-29</td>
+							<td>new@gmail.com</td>
+							<td>This is a test message.</td>
+
+              
+              
+              </tr>
+              
+							  					  
+					</tbody>
+				</table>
+		</div>
+	  </div>
+		
+		
     </div>
-  </section>
+  </div>
 </div>
 
 

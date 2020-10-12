@@ -1203,6 +1203,7 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
     margin: 2%;
     padding: 2rem 1rem;
 	border: 1px solid #dad9da;
+	border-left: .25rem solid #4e73df!important;
 }
 
 .vpanel_counts:hover{
@@ -1244,6 +1245,22 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
 	margin-bottom: 20px;
 }
 
+.well{
+	margin-bottom: 0; 
+    border: none;
+}
 .well form p{
 	font-weight: 700;
+}
+
+/*----------------------------*\
+	vPanel All Products
+\*----------------------------*/
+
+.i1 {
+    width: 70px;
+}
+
+.i1 img {
+    max-width: 90%;
 }

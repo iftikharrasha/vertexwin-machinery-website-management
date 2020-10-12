@@ -1,5 +1,5 @@
 <?php include("../partpage/header.php"); ?>
-<div class="container">
+<div class="container-fluid">
   <?php include("../partpage/sidebar.php"); ?>
   <div class="col-md-9 content" style="margin-left:10px">
     <div class="panel panel-default">
@@ -69,9 +69,14 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
                 </div>
               </form>
             </div>
+			<div align="center">
+              <button type="submit" name="submit" id="submit" class="btn btn-info" style="margin-bottom: 20px;"> Add Product</button>
+			</div>
           </div>
         </div>
       </div>
+
+      
     </div>
   </div>
   </section>
