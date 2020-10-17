@@ -7,7 +7,7 @@
 		$password = $_POST['password'];
 		
 		if(empty($username) || empty($password)) {
-			$_SESSION['errorMessage'] = 'All Fields Must Be Fill Out!';
+			$_SESSION['errorMessage'] = 'All Fields Must Be Fill Out';
 		}else{
 			$foundAccount = LoginAttempt($username, $password);
 			
@@ -18,7 +18,7 @@
 			
 			Redirect_To('./control/dashboard.php');
 			}else {
-				$_SESSION['errorMessage'] = 'Username/Password Is Invalid!';
+				$_SESSION['errorMessage'] = 'Username/Password Is Invalid';
 			}
 		}
 	}
@@ -55,7 +55,7 @@
 			  
 			  <p class="message">
 				<?php echo Message(); ?>
-			  </p>
+			</p>
 				
               <div style="margin-bottom: 10px;">
                 <input type="text" id="userName" name="username" class="form-control" placeholder="Your Email">

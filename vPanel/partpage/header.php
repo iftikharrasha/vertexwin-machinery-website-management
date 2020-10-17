@@ -1,12 +1,3 @@
-<?php
-	require_once('../includes/sessions.php');
-	require_once('../includes/functions.php');
-	
-	if(!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
-		header("Location:../index.php?login_first");
-	}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>

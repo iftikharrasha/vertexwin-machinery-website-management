@@ -1,5 +1,11 @@
+
 <?php
-	include("../partpage/header.php");
+	require_once('../includes/sessions.php');
+	require_once('../includes/functions.php');
+	
+	if(!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
+		header("Location:../index.php?login_first");
+	}
 	
 	//total products counts
 	$countProducts= mysqli_query($con, "SELECT COUNT(product_id) as TOTAL FROM products");
@@ -12,13 +18,18 @@
 	//total orders counts
 	$countOrders= mysqli_query($con, "SELECT COUNT(order_id) as TOTAL FROM orders_info");
 	$totalOrders = mysqli_fetch_assoc($countOrders);
+
+	include("../partpage/header.php");
 ?>
 
 <div class="container-fluid">
   <div class="row">
+  
     <?php include("../partpage/sidebar.php"); ?>
+	
     <div class="col-md-10 content" style="margin-left:10px">
       <div class="panel-body-boots">
+	  
         <h3>
 <?php  //success message
 	if(isset($_POST['success'])) {
@@ -27,6 +38,7 @@
 	}
 ?>
         </h3>
+		
       </div>
       <div class="four-grids" style="margin-bottom: 30px; ">
         <div class="col-md-3 four-grid">

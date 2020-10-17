@@ -1,26 +1,77 @@
-<?php include("../partpage/header.php"); ?>
+<?php
+	require_once('../includes/sessions.php');
+	require_once('../includes/functions.php');
+	
+	if(!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
+		header("Location:../index.php?login_first");
+	}
+	
+	date_default_timezone_set('Asia/Manila');
+	$time = time();
+	
+	//all Categories
+	$allCategories= mysqli_query($con, "SELECT * FROM categories");
+	
+	//adding category
+	if ( isset( $_POST['cat-submit'])) {
+		$dateTime = strftime('%Y-%m-%d',$time);
+		$cat_name = mysqli_real_escape_string($con, $_POST['category']);
+		$author = $_SESSION['username'];
+		
+		if ( empty($cat_name)) {
+			$_SESSION['errorMessage'] = "Field Is Empty!";
+			Redirect_To('categories.php');
+		}else {
+			$query = "INSERT INTO categories (date_time, cat_title, added_by) 
+			VALUES ('$dateTime', '$cat_name', '$author')";
+			
+			$exec = Query($query);
+			if ($exec) {
+				$_SESSION['successMessage'] = "Category Added Successfully!";
+				Redirect_To('categories.php?category_added');
+			}else {
+				$_SESSION['errorMessage'] = "Please Try Again!";
+			}
+		}
+	}
+	
+	//deleting category
+	if ( isset( $_POST['delcat-submit'])) {
+		$catid=$_POST['delete_id'];
+		
+		$result="DELETE FROM categories WHERE cat_id='$catid'";
+		
+		$exec = Query($result);
+		if($exec) {
+			$_SESSION['successMessage'] = "Category Deleted Successfully!";
+			Redirect_To('categories.php?deletesuccess');
+		} else {
+			$_SESSION['errorMessage'] = "Please Try Again!";
+		}
+	}
+	
+	include("../partpage/header.php");
+?>
+
 <div class="container-fluid">
+
   <?php include("../partpage/sidebar.php"); ?>
+  
   <div class="col-md-9 content" style="margin-left:10px">
     <div class="panel-body-boots">
-      <h3>
-        <?php  //success message
-if(isset($_POST['success'])) {
-$success = $_POST["success"];
-echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <span class='glyphicon glyphicon-ok'></h1></span>";
-}
-?>
-      </h3>
       <div class="row">
         <div class="col-md-5 col-xs-12 well">
           <h4 class="m-b-0">Add Category
           </h4>
-          <form action="../../src/store/cat/catStore.php" enctype="multipart/form-data" method="post" novalidate="novalidate">
+		  <p class="message">
+              <?php echo Message(); ?>
+           </p>
+          <form action="categories.php" enctype="multipart/form-data" method="post" novalidate="novalidate">
             <div class="form-body">
               <div class="row ">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <input name="department" class="form-control" id="firstName" required="" type="text" placeholder="" minlength="3" value="">
+                    <input name="category" class="form-control" id="firstName" required="" type="text" placeholder="" minlength="3" value="">
                   </div>
                 </div>
                 <!--/span-->
@@ -28,7 +79,7 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
               <!--/row-->
             </div>
             <div class="form-actions">
-              <button class="btn btn-info" type="submit"> 
+              <button class="btn btn-info" type="submit" name="cat-submit"> 
                 <i class="fa fa-check">
                 </i> Save
               </button>
@@ -51,8 +102,13 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
                 </tr>
               </thead>
               <tbody>
+			  
+<?php
+	foreach ($allCategories as $category){
+?>
                 <tr>
-                  <td>cat name
+                  <td> 
+					<?=$category['cat_title']?>
                   </td>
                   <td class="jsgrid-align-center">
                     <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
@@ -61,205 +117,19 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
                     </a>
                   </td>
                   <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
+                    <form action="categories.php" method="post">
+                      <input type="hidden" name="delete_id" value="<?=$category['cat_id']?>">
+                      <button type = "submit"  name="delcat-submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
                         <i class="fa fa-trash-o">
                         </i>
                       </button>
                     </form>
                   </td>
                 </tr>
-                <tr>
-                  <td>cat name
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-                <tr>
-                  <td>cat name
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-                <tr>
-                  <td>cat name
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-                <tr>
-                  <td>cat name
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-                <tr>
-                  <td>cat name
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-                <tr>
-                  <td>cat name
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-                <tr>
-                  <td>cat name
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-                <tr>
-                  <td>cat name
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-                <tr>
-                  <td>cat name
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-                <tr>
-                  <td>cat name
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="../../src/store/cat/catDelete.php" method="post">
-                      <input type="hidden" name="delete_id" value="">
-                      <button type = "submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                </tr>
+<?php
+	}
+?>
+                
               </tbody>
             </table>
           </div>
