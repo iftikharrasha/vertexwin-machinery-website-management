@@ -1,6 +1,12 @@
 <?php
-session_start();
+	require_once('../includes/sessions.php');
+	require_once('../includes/functions.php');
+	
+	if(!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
+		header("Location:../index.php?login_first");
+	}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,8 +47,21 @@ session_start();
               </div>
               <div class="header-logo md-hl">
                 <a href="../control/dashboard.php" class="logo">
-                  <h1 class="title">VertexWin
-                  </h1>				
+              
+<?php
+			if(isset($_SESSION["username"])){
+				echo '
+				
+					<h1 class="title">' . $_SESSION["username"] . '</h1>	
+				';
+			}else{
+				echo '
+					
+					<h1 class="title"> My Account</h1>
+				';
+			}
+?>
+
                 </a>
               </div>
             </div>

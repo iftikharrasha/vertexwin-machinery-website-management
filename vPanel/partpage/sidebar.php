@@ -102,7 +102,7 @@
             </a> 
           </li>
           <li>
-            <a href="../index.php">
+            <a href="../includes/logout.php">
               <i class="fa fa-sign-out">
               </i>
               <span>Logout

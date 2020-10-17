@@ -1,3 +1,29 @@
+<?php
+	require_once('./includes/sessions.php');
+	require_once('./includes/functions.php');
+	
+	if (isset($_POST['submit'])) {
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		
+		if(empty($username) || empty($password)) {
+			$_SESSION['errorMessage'] = 'All Fields Must Be Fill Out!';
+		}else{
+			$foundAccount = LoginAttempt($username, $password);
+			
+			if ($foundAccount) {
+				$_SESSION['admin_id'] = $foundAccount['admin_id'];
+				$_SESSION['username'] = $foundAccount['admin_name'];
+				
+			
+			Redirect_To('./control/dashboard.php');
+			}else {
+				$_SESSION['errorMessage'] = 'Username/Password Is Invalid!';
+			}
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,21 +42,29 @@
     <link type="text/css" rel="stylesheet" href="../css/media.css"/>   
   </head>
   <body>
+	
     <div>
       <div class="login_wrapper">
         <div class="login_form">
+		
           <section class="login_content">
-            <form action="./control/dashboard.php" method="post">
+    
+            <form action="index.php" method="post">
               <h1>Log in to your vPanel
               </h1>
+			  
+			  <p class="message">
+				<?php echo Message(); ?>
+			  </p>
+				
               <div style="margin-bottom: 10px;">
-                <input type="text" id="userName" name="userName" class="form-control" placeholder="Your Email">
+                <input type="text" id="userName" name="username" class="form-control" placeholder="Your Email">
               </div>
               <div>
                 <input type="password" id="password" name="password" class="form-control" placeholder="Password">
               </div>
               <div>
-                <button type="submit" name="login" class="btn btn-info submit">Log in
+                <button type="submit" name="submit" class="btn btn-info submit">Log in
                 </button>
               </div>
               <div class="clearfix">

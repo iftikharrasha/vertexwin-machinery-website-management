@@ -63,7 +63,7 @@ ul, ol {
       font-style:normal;
       font-size: 33px;
       color: aliceblue;
-      font-family: serif;
+	  text-transform: uppercase;
 }
 
 /*----------------------------*\
@@ -1287,4 +1287,9 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
       height: 10px;
       background: #28a745;
       border-radius: 50%
+}
+
+.message{
+	color: red;
+	font-weight: 700;
 }
