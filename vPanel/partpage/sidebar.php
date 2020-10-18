@@ -31,11 +31,29 @@
               </li>
             </ul>
           </li>
+		  <li>
+            <a href="#">
+              <i class="fa fa-globe">
+              </i>
+              <span>Country
+              </span>
+              <span class="fa fa-angle-right" style="float: right">
+              </span>
+              <div class="clearfix">
+              </div>
+            </a>
+            <ul>
+              <li>
+                <a href="../country/countries.php">Add Country
+                </a>
+              </li>
+            </ul>
+          </li>
           <li>
             <a href="#">
               <i class="fa fa-database">
               </i>
-              <span>All Products
+              <span>Products
               </span>
               <span class="fa fa-angle-right" style="float: right">
               </span>
@@ -53,7 +71,7 @@
             <a href="#">
               <i class="fa fa-plus-circle">
               </i>
-              <span>New Item
+              <span>Add Item
               </span>
               <span class="fa fa-angle-right" style="float: right">
               </span>

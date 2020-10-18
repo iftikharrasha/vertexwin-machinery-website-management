@@ -1,4 +1,3 @@
-
 <?php
 	require_once('../includes/sessions.php');
 	require_once('../includes/functions.php');
@@ -190,7 +189,6 @@
 			$eml = $post['email'];
 			$msg = $post['message'];
 ?>
-
               <tr>
                 <td><?php echo $order_No; ?>
                 </td>

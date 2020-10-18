@@ -82,6 +82,17 @@
                       </div>
                     </a>
                   </li>
+				  <li>
+                      <a href="../country/countries.php">
+                        <i class="fa fa-globe">
+                        </i>
+                        <span>Add Category
+                        </span>
+                        </span>
+                      <div class="clearfix">
+                      </div>
+                    </a>
+                  </li>
                 <li>
                   <a href="../allproducts/manageproducts.php">
                     <i class="fa fa-database">
@@ -132,7 +143,7 @@
       </a> 
     </li>
     <li>
-      <a href="#">
+      <a href="../includes/logout.php">
         <i class="fa fa-sign-out">
         </i>
         <span>Logout

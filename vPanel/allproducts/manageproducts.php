@@ -1,16 +1,18 @@
-<?php include("../partpage/header.php"); ?>
+<?php
+	require_once('../includes/sessions.php');
+	require_once('../includes/functions.php');
+	
+	if(!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
+		header("Location:../index.php?login_first");
+	}
+
+	include("../partpage/header.php");
+?>
+
 <div class="container-fluid">
   <?php include("../partpage/sidebar.php"); ?>
   <div class="col-md-9 content" style="margin-left:10px">
     <div class="panel-body-boots">
-      <h3>
-        <?php  //success message
-if(isset($_POST['success'])) {
-$success = $_POST["success"];
-echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <span class='glyphicon glyphicon-ok'></h1></span>";
-}
-?>
-      </h3>
       <div class="row">
         <div class="col-xs-12">
           <div class="well">
@@ -25,18 +27,44 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
           <h4>All Products:
           </h4>
           <div class="table-responsive">
+<?php
+	$productNo = 1;
+	$page = 1;
+	if ( isset($_GET['page'])){
+		$page = $_GET['page'];
+		$showPost = ($page * 10) - 10;
+		if ($page <= 0) {
+			$showPost = 0;
+		}
+		
+		$sql = "SELECT * FROM post ORDER BY product_id LIMIT $showPost,10";
+		
+	}else{
+	$sql = "SELECT * FROM products ORDER BY product_id LIMIT 0,10";
+	}
+	
+	$exec = Query($sql);
+	if (mysqli_num_rows($exec) < 1) {
+?>
+      <p class="lead">You Have 0 Orders At This Moment!
+      </p>
+<?php
+	}else{
+?>
             <table class="display table table-hover table-striped table-bordered" id="dataTable" width="100%" cellspacing="0">
               <tbody>
                 <tr>
-                  <th>Post No.
+                  <th>No.
                   </th>
-                  <th>Post Date
+                  <th>Date
                   </th>
-                  <th>Date Title
-                  </th>
-                  <th>Author
+                  <th>Product Title
                   </th>
                   <th>Category
+                  </th>
+				  <th>Country
+                  </th>
+				  <th>Description
                   </th>
                   <th>Feature Image
                   </th>
@@ -47,25 +75,41 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
                   <th>Details
                   </th>
                 </tr>
+<?php 
+		while ($post = mysqli_fetch_assoc($exec)) {
+			$product_No = $productNo;
+			$product_id = $post['product_id'];
+			$title = $post['product_title'];
+			$desc = $post['product_desc'];
+			$image = $post['product_image'];
+?>
                 <tr>
                   <td>
-                    1                      
+                    <?php echo $product_No; ?>                     
                   </td>
                   <td>
                     2017-06-21                      
                   </td>
                   <td>
-                    National Winners.                      
-                  </td>
-                  <td>
-                    Admin                      
+                    <?php echo $title; ?>                      
                   </td>
                   <td>
                     sports                      
                   </td>
+				   <td>
+                    Japan                      
+                  </td>
+				   <td>
+<?php 
+	if(strlen($desc) > 100 ) {
+		echo substr($desc,0,100) . '...';
+	}else {
+		echo $desc;
+	}
+?>					
+                  </td>
                   <td class="i1">
-                    <img class="img-responsive" src="../../resource/img/ballbearing.jpg" 
-                         <="" td="">   
+                    <?php echo "<img class='img-responsive' src='../../resource/img/$image'>"; ?>    					
                   </td>
                   <td class="jsgrid-align-center">
                     <a class="btn btn-sm btn-info" href="editpost.php?post_id=2">
@@ -90,173 +134,11 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    2                      
-                  </td>
-                  <td>
-                    2017-06-21                      
-                  </td>
-                  <td>
-                    Game of data stackin...                      
-                  </td>
-                  <td>
-                    Admin                      
-                  </td>
-                  <td>
-                    sports                      
-                  </td>
-                  <td class="i1">
-                    <img class="img-responsive" src="../../resource/img/ballbearing.jpg" 
-                         <="" td="">   
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a class="btn btn-sm btn-info" href="editpost.php?post_id=4">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="managepost.php?delete_post_id=4" method="post">
-                      <input type="hidden" name="delete_id" value="4">
-                      <button type="submit" name="delpost-submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                  <td>
-                    <a href="http://localhost/vertexwin-machinery-website-management/item.php?p=1">
-                      <button class="btn btn-info">Live Preview
-                      </button>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    3                      
-                  </td>
-                  <td>
-                    2017-06-21                      
-                  </td>
-                  <td>
-                    ICT division Winner.                      
-                  </td>
-                  <td>
-                    Admin                      
-                  </td>
-                  <td>
-                    sports                      
-                  </td>
-                  <td class="i1">
-                    <img class="img-responsive" src="../../resource/img/ballbearing.jpg" 
-                         <="" td="">   
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a class="btn btn-sm btn-info" href="editpost.php?post_id=7">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="managepost.php?delete_post_id=7" method="post">
-                      <input type="hidden" name="delete_id" value="7">
-                      <button type="submit" name="delpost-submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                  <td>
-                    <a href="../../seepost.php?id=7">
-                      <button class="btn btn-info">Live Preview
-                      </button>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    4                      
-                  </td>
-                  <td>
-                    2017-06-21                      
-                  </td>
-                  <td>
-                    Alumnus won gold med...                      
-                  </td>
-                  <td>
-                    Admin                      
-                  </td>
-                  <td>
-                    sports                      
-                  </td>
-                  <td class="i1">
-                    <img class="img-responsive" src="../../resource/img/ballbearing.jpg" 
-                         <="" td="">   
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a class="btn btn-sm btn-info" href="editpost.php?post_id=9">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="managepost.php?delete_post_id=9" method="post">
-                      <input type="hidden" name="delete_id" value="9">
-                      <button type="submit" name="delpost-submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                  <td>
-                    <a href="../../seepost.php?id=9">
-                      <button class="btn btn-info">Live Preview
-                      </button>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    5                      
-                  </td>
-                  <td>
-                    2017-06-23                      
-                  </td>
-                  <td>
-                    Hau Mau wins Robo fi...                      
-                  </td>
-                  <td>
-                    Admin                      
-                  </td>
-                  <td>
-                    test                      
-                  </td>
-                  <td class="i1">
-                    <img class="img-responsive" src="../../resource/img/ballbearing.jpg" 
-                         <="" td="">   
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a class="btn btn-sm btn-info" href="editpost.php?post_id=6">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <form action="managepost.php?delete_post_id=6" method="post">
-                      <input type="hidden" name="delete_id" value="6">
-                      <button type="submit" name="delpost-submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
-                        <i class="fa fa-trash-o">
-                        </i>
-                      </button>
-                    </form>
-                  </td>
-                  <td>
-                    <a href="../../seepost.php?id=6">
-                      <button class="btn btn-info">Live Preview
-                      </button>
-                    </a>
-                  </td>
-                </tr>
+<?php
+			$productNo++;
+		}			
+	}
+?>
               </tbody>
             </table>
             <!--</table>-->
@@ -265,34 +147,57 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
         <div class="col-xs-12">
           <nav aria-label="Page navigation example" align="center">
             <ul class="pagination">
+<?php
+	if ($page > 1) {
+?>
               <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
+                <a class="page-link" href="manageproducts.php?page=<?php echo $page - 1; ?>" aria-label="Previous">
                   <span aria-hidden="true">&laquo;
                   </span>
                   <span class="sr-only">Previous
                   </span>
                 </a>
               </li>
+<?php
+	}
+	$sql = "SELECT COUNT(*) FROM products";
+	
+	$exec = Query($sql);
+	$rowCount = mysqli_fetch_array($exec);
+	$totalRow = array_shift($rowCount);
+	$postPerPage = ceil($totalRow / 5);
+	
+	for ($count = 1; $count <= $postPerPage; $count++){
+		if ($page == $count) {
+?>
               <li class="page-item">
-                <a class="page-link" href="#">1
+                <a class="page-link" href="manageproducts.php?page=<?php echo $count ?>"><?php echo $count ?>
                 </a>
               </li>
+<?php
+			}else {
+?>
               <li class="page-item">
-                <a class="page-link" href="#">2
+                <a class="page-link" href="manageproducts.php?page=<?php echo $count ?>"> <?php echo $count ?>
                 </a>
               </li>
+<?php
+			}		
+		}
+		if($page < $postPerPage) {
+?>
               <li class="page-item">
-                <a class="page-link" href="#">3
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
+                <a class="page-link" href="manageproducts.php?page=<?php echo $page + 1; ?>" aria-label="Next">
                   <span aria-hidden="true">&raquo;
                   </span>
                   <span class="sr-only">Next
                   </span>
                 </a>
               </li>
+<?php
+		}
+	
+?>
             </ul>
           </nav>
         </div>
