@@ -37,7 +37,7 @@
 			$showPost = 0;
 		}
 		
-		$sql = "SELECT * FROM post ORDER BY product_id LIMIT $showPost,10";
+		$sql = "SELECT * FROM products ORDER BY product_id LIMIT $showPost,10";
 		
 	}else{
 	$sql = "SELECT * FROM products ORDER BY product_id LIMIT 0,10";
@@ -82,22 +82,25 @@
 			$title = $post['product_title'];
 			$desc = $post['product_desc'];
 			$image = $post['product_image'];
+			$date = $post['date_time'];
+			$cat = $post['product_category'];
+			$cont = $post['product_country'];
 ?>
                 <tr>
                   <td>
                     <?php echo $product_No; ?>                     
                   </td>
                   <td>
-                    2017-06-21                      
+					<?php echo $date; ?>                       
                   </td>
                   <td>
                     <?php echo $title; ?>                      
                   </td>
                   <td>
-                    sports                      
+                    <?php echo $cat; ?>                      
                   </td>
 				   <td>
-                    Japan                      
+					<?php echo $cont; ?>                        
                   </td>
 				   <td>
 <?php 
@@ -165,12 +168,12 @@
 	$exec = Query($sql);
 	$rowCount = mysqli_fetch_array($exec);
 	$totalRow = array_shift($rowCount);
-	$postPerPage = ceil($totalRow / 5);
+	$postPerPage = ceil($totalRow / 10);
 	
 	for ($count = 1; $count <= $postPerPage; $count++){
 		if ($page == $count) {
 ?>
-              <li class="page-item">
+              <li class="page-item active">
                 <a class="page-link" href="manageproducts.php?page=<?php echo $count ?>"><?php echo $count ?>
                 </a>
               </li>
