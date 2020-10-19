@@ -5,6 +5,20 @@
 	if(!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
 		header("Location:../index.php?login_first");
 	}
+	
+	if ( isset( $_POST['delproduct-submit'])) {
+		$pid=$_POST['delete_id'];
+		
+		$result="DELETE FROM products WHERE product_id='$pid'";
+		
+		$exec = Query($result);
+		if($exec) {
+			$_SESSION['successMessage'] = "Post Deleted Successfully!";
+			Redirect_To('managepost.php?deletesuccess');
+		} else {
+			$_SESSION['errorMessage'] = "Please Try Again!";
+		}
+	}
 
 	include("../partpage/header.php");
 ?>
@@ -26,6 +40,11 @@
           </div>
           <h4>All Products:
           </h4>
+		  
+	    <p class="message">
+                  <?php echo Message(); ?>
+        </p>
+		
           <div class="table-responsive">
 <?php
 	$productNo = 1;
@@ -37,10 +56,10 @@
 			$showPost = 0;
 		}
 		
-		$sql = "SELECT * FROM products ORDER BY product_id LIMIT $showPost,10";
+		$sql = "SELECT * FROM products ORDER BY product_id DESC LIMIT $showPost,10";
 		
 	}else{
-	$sql = "SELECT * FROM products ORDER BY product_id LIMIT 0,10";
+	$sql = "SELECT * FROM products ORDER BY product_id DESC LIMIT 0,10";
 	}
 	
 	$exec = Query($sql);
@@ -115,22 +134,22 @@
                     <?php echo "<img class='img-responsive' src='../../resource/img/$image'>"; ?>    					
                   </td>
                   <td class="jsgrid-align-center">
-                    <a class="btn btn-sm btn-info" href="editpost.php?post_id=2">
+                    <a class="btn btn-sm btn-info" href="editproduct.php?product_id=<?php echo $product_id;?>">
                       <i class="fa fa-pencil-square-o">
                       </i>
                     </a>
                   </td>
                   <td class="jsgrid-align-center">
-                    <form action="managepost.php?delete_post_id=2" method="post">
-                      <input type="hidden" name="delete_id" value="2">
-                      <button type="submit" name="delpost-submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
+                    <form action="manageproducts.php?delete_id=<?php echo $product_id;?>" method="post">
+                      <input type="hidden" name="delete_id" value="<?php echo $product_id;?>">
+                      <button type="submit" name="delproduct-submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
                         <i class="fa fa-trash-o">
                         </i>
                       </button>
                     </form>
                   </td>
                   <td>
-                    <a href="http://localhost/vertexwin-machinery-website-management/item.php?p=1">
+                    <a href="http://localhost/vertexwin-machinery-website-management/item.php?p=<?php echo $product_id;?>">
                       <button class="btn btn-info">Live Preview
                       </button>
                     </a>

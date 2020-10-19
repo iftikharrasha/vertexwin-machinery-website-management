@@ -6,10 +6,9 @@
 		header("Location:./login.php?login_first");
 	}
 	
-	date_default_timezone_set('Asia/Manila');
-	$time = time();
-	
 	if(isset($_POST['post-submit'])) {
+		date_default_timezone_set('Asia/Manila');
+		$time = time();
 		
 		$title = mysqli_real_escape_string($con, $_POST['post-title']);
 		$category = mysqli_real_escape_string($con, $_POST['post-category']);
