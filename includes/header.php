@@ -1,5 +1,6 @@
 <?php
-session_start();
+	require_once('./vpanel/includes/sessions.php');
+	require_once('./vpanel/includes/functions.php');
 ?>
 
 <!DOCTYPE html>

@@ -45,7 +45,7 @@
                   <?php echo Message(); ?>
         </p>
 		
-          <div class="table-responsive">
+          <div class="table-responsive text-center">
 <?php
 	$productNo = 1;
 	$page = 1;

@@ -86,7 +86,7 @@
                       <a href="../country/countries.php">
                         <i class="fa fa-globe">
                         </i>
-                        <span>Add Category
+                        <span>Add Country
                         </span>
                         </span>
                       <div class="clearfix">

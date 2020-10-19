@@ -17,7 +17,7 @@
         <div class="col-xs-12 well">
           <h4>All Orders:
           </h4>
-          <div class="table-responsive">	
+          <div class="table-responsive text-center">	
 <?php
 	$orderNo = 1;
 	$sql = "SELECT * FROM orders_info";

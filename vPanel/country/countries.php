@@ -89,13 +89,11 @@
         <div class="col-md-7 col-xs-12 well">
           <h4>All countries:
           </h4>
-          <div class="table-responsive">
+          <div class="table-responsive text-center">
             <table width="100%" class="display table table-hover table-striped table-bordered" cellspacing="0">
               <thead>
                 <tr>
                   <th>Country Name
-                  </th>
-                  <th>Edit
                   </th>
                   <th>Delete
                   </th>
@@ -109,12 +107,6 @@
                 <tr>
                   <td> 
 					<?=$country['country_name']?>
-                  </td>
-                  <td class="jsgrid-align-center">
-                    <a title="Edit" class="btn btn-sm btn-info waves-effect waves-light" href="../../src/store/cat/catEdit.php">
-                      <i class="fa fa-pencil-square-o">
-                      </i>
-                    </a>
                   </td>
                   <td class="jsgrid-align-center">
                     <form action="countries.php" method="post">

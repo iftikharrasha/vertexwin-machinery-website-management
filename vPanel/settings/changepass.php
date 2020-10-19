@@ -14,7 +14,7 @@ echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <
       <div class="row">
         <div class="col-lg-4 col-md-3 col-xs-12">
         </div>
-        <div class="col-lg-4 col-md-6 col-xs-12 well">
+        <div class="col-lg-4 col-md-6 col-xs-12">
           <div class="well">
             <h4>Change your Password:
             </h4> 
