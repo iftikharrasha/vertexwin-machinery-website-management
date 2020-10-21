@@ -26,7 +26,7 @@
 ?>
           <!-- products -->
           <div class="product">
-            <a href="#">
+            <a href="./item.php?p=<?php echo $pro_id;?>">
               <div class="product-img">
                 <img src="resource/img/<?php echo htmlentities($pro_image); ?>" style="max-height: 170px;" alt="">
                 <div class="product-label">
@@ -40,7 +40,7 @@
               </p>
               <h3 class="product-name header-cart-item-name">
                 <a
-                   href="#"><?php echo htmlentities($pro_title); ?>
+                   href="./item.php?p=<?php echo $pro_id;?>"><?php echo htmlentities($pro_title); ?>
                 </a>
               </h3>
               <div class="product-rating">

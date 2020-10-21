@@ -82,21 +82,21 @@
 						<!-- SEARCH BAR -->
 						<div class="col-md-12">
 							<div class="header-search">
-								<form action="products.php">
-									<select class="input-select">
-										<option value="0">All Categories</option>
-										<option value="1">Bobbin</option>
-										<option value="1">Spare</option>
-										<option value="1">Tester/Length</option>
-										<option value="1">Reeds</option>
-										<option value="1">Bearing</option>
-										<option value="1">Expansion</option>
-										<option value="1">Ultrasonic</option>
-										<option value="1">Unicutter</option>
-										<option value="1">Balloon</option>
-										<option value="1">Caster</option>
-										<option value="1">Snail</option>
-										<option value="1">Rubber</option>
+								<form action="products.php" method="GET">
+									<select class="input-select" name="category" id="post-category">
+<?php
+	$sql = "SELECT * FROM categories";
+	
+	$exec = Query($sql);
+	while($row = mysqli_fetch_assoc($exec)){
+		$catid = $row["cat_id"];
+		echo "
+			
+			<option>$row[cat_title]</option>
+		
+		";
+	}
+?>  
 									</select>
 									<button type="submit" id="search_btn" class="search-btn">Search</button>
 								</form>

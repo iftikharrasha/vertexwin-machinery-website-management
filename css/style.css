@@ -449,6 +449,7 @@ ul, ol {
 }
 
 .product .product-body {
+  min-height: 170px;
   position: relative;
   padding: 15px;
   background-color: #FFF;
@@ -832,6 +833,7 @@ ul, ol {
 #item-main-img .item-preview {
   margin: 0px 5px;
   border: 1px solid #E4E7ED;
+  cursor: pointer;
 }
 
 .item-preview img {
@@ -1266,7 +1268,7 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
 	margin-bottom: 0; 
     border: none;
 }
-.well form p{
+.well p{
 	font-weight: 700;
 }
 
@@ -1292,4 +1294,8 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
 .message{
 	color: red;
 	font-weight: 700;
+}
+
+.update{
+	color: #673DE6;
 }

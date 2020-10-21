@@ -11,6 +11,7 @@ if( isset($_GET['p'])) {
 		$exec = Query($query);
 		if (mysqli_num_rows($exec) > 0) {
 			while ($post = mysqli_fetch_assoc($exec) ) {
+				
 				$pro_id    = $post['product_id'];
 				$related_id = $pro_id;
 				$pro_date = $post['date_time'];
