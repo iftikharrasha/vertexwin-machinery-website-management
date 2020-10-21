@@ -15,43 +15,32 @@ include "includes/advertisements.php";
 						<div class="aside">
 							<h3 class="aside-title">Categories</h3>
 							<div class="btn-group-vertical">
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Bobbin<small class="qty">(5)</small></a>
+<?php
+	$sql = "SELECT * FROM categories";
+	
+	$exec = Query($sql);
+	if (mysqli_num_rows($exec) > 0) {
+		$i=1;
+		while ($category = mysqli_fetch_assoc($exec)) {
+			$cat_id = $category["cat_id"];
+			$cat_name = $category["cat_title"];
+			
+			$run_query = "SELECT COUNT(*) AS count_items FROM products WHERE category_id=$i";
+			$query = Query($run_query);
+			$row = mysqli_fetch_array($query);
+            $count=$row["count_items"];
+            $i++;
+			
+			echo "
+								<div type='button' class='btn navbar-btn category' catid='$cat_id'>
+										<a href='#'>$cat_name<small class='qty'>($count)</small></a>
 								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Spare<small class="qty">(7)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Reeds<small class="qty">(4)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Caster<small class="qty">(2)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Balloon<small class="qty">(8)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Rubber<small class="qty">(5)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Bearing<small class="qty">(3)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Snail Wire<small class="qty">(3)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Unicutter<small class="qty">(5)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Expander<small class="qty">(7)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Length Meter<small class="qty">(8)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Other<small class="qty">(7)</small></a>
-								</div>
-							</div>
+				";
+		}
+		echo "</div>";
+	}
+?>
+							
 						</div>
 						<!-- Categories -->
 					</div>
@@ -61,19 +50,31 @@ include "includes/advertisements.php";
 						<div class="aside">
 							<h3 class="aside-title">Countries</h3>
 							<div class="btn-group-vertical">
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Japan<small class="qty">(5)</small></a>
+<?php
+	$sql = "SELECT * FROM countries";
+	
+	$exec = Query($sql);
+	if (mysqli_num_rows($exec) > 0) {
+		$i=1;
+		while ($country = mysqli_fetch_assoc($exec)) {
+			$cont_id = $country["country_id"];
+			$cont_name = $country["country_name"];
+			
+			$run_query = "SELECT COUNT(*) AS count_items FROM products WHERE cont_id=$i";
+			$query = Query($run_query);
+			$row = mysqli_fetch_array($query);
+            $count=$row["count_items"];
+            $i++;
+			
+			echo "
+								<div type='button' class='btn navbar-btn category' contid='$cont_id'>
+										<a href='#'>$cont_name<small class='qty'>($count)</small></a>
 								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">Korea<small class="qty">(7)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">China<small class="qty">(4)</small></a>
-								</div>
-								<div type="button" class="btn navbar-btn category">
-										<a href="#">India<small class="qty">(2)</small></a>
-								</div>
-							</div>
+				";
+		}
+		echo "</div>";
+	}
+?>
 						</div>
 						<!-- Countries -->
 					</div>

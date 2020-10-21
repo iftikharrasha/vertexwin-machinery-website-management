@@ -1,6 +1,34 @@
 <?php
 include "includes/header.php";
 include "includes/advertisements.php";
+
+if( isset($_GET['p'])) {
+		$product_id = $_GET['p'];
+		$view_count = "UPDATE products SET views = views+1 WHERE product_id = '$product_id'";
+		$exec = Query($view_count);
+		
+		$query = "SELECT * FROM products WHERE product_id = '$_GET[p]'";
+		$exec = Query($query);
+		if (mysqli_num_rows($exec) > 0) {
+			while ($post = mysqli_fetch_assoc($exec) ) {
+				$pro_id    = $post['product_id'];
+				$related_id = $pro_id;
+				$pro_date = $post['date_time'];
+				$pro_title = $post['product_title'];
+				$pro_cat   = $post['product_category'];
+				$related_cat = $pro_cat;
+				$pro_cont   = $post['product_country'];
+				$related_cont = $pro_cont;
+				$pro_image = $post['product_image'];
+				$pro_content = $post['product_desc'];
+				
+				
+				
+			}
+		}
+	}else{
+		Redirect_To('./index.php');
+	}
 ?>
 
 <div class="content content-upped">
@@ -12,7 +40,7 @@ include "includes/advertisements.php";
 					<!-- item image -->
 					<div id="item-main-img" style="margin-bottom: 30px;">
 						<div class="item-preview">
-							<img src="resource/img/spindletape.jpg" alt="item">
+							<img src="resource/img/<?php echo $pro_image; ?>" alt="item">
 						</div>
 					</div>
 					<!-- item image -->
@@ -20,21 +48,21 @@ include "includes/advertisements.php";
 				<div class="col-lg-6 col-md-12">
 					<!-- item details -->
 					<div class="item-details">
-						<h2 class="item-name">Ball Bearing</h2>
+						<h2 class="item-name"><?php echo $pro_title; ?></h2>
 							
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nisi, hic consequatur veritatis numquam aut officia laboriosam dolor aliquid voluptatum itaque doloribus temporibus, iusto natus magnam fuga voluptas, assumenda impedit. Quisquam enim architecto facilis. Fuga similique, architecto numquam omnis sint unde atque exercitationem qui voluptas nisi ullam eos? Omnis sequi ut consequatur fugiat! Est numquam nesciunt quaerat voluptas blanditiis et culpa vel quibusdam voluptatum facere? Atque totam vitae quod tempore repudiandae quos quam minus debitis pariatur ad eveniet quia rem iste quas aliquam corrupti velit ducimus, error quaerat temporibus labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nisi, hic consequatur veritatis numquam aut officia laboriosam dolor aliquid voluptatum itaque doloribus temporibus, iusto natus magnam fuga voluptas, assumenda impedit. Quisquam enim architecto facilis. Fuga similique, architecto numquam omnis sint unde atque exercitationem qui voluptas nisi ullam eos? Omnis sequi ut consequatur fugiat! Est numquam nesciunt quaerat voluptas blanditiis et culpa vel quibusdam voluptatum facere.</p>
+						<p><?php echo $pro_content; ?></p>
 						
 						<ul class="item-links">
-							<li>Category: <a href="#">Headphones</a></li>
+							<li>Category: <a href="#"><?php echo $pro_cat; ?></a></li>
 						</ul>
 						
 						<ul class="item-links">
-							<li>Country: <a href="#">Japan</a></li>
+							<li>Country: <a href="#"><?php echo $pro_cont; ?></a></li>
 						</ul>
 						
 						<div class="item-order">
 							<div class="btn-group">
-								<a href="contact.php"><button class="item-order-btn" pid="#"  id="product" ><i class="fa fa-shopping-cart"></i> Order</button></a>
+								<a href="contact.php"><button class="item-order-btn" id="product" ><i class="fa fa-shopping-cart"></i> Order</button></a>
                             </div>
 						</div>
 							
