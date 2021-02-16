@@ -6,6 +6,7 @@
     <title>Admin Panel
     </title>
     <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
     <!-- Bootstrap -->
     <link type="text/css" rel="stylesheet" href="../../css/bootstrap.min.css"/>
@@ -105,7 +106,7 @@
                 </a>
               </li>
             <li>
-              <a href="#">
+              <a href="../itemadd/additem.php">
                 <i class="fa fa-plus-circle">
                 </i>
                 <span>Add New Item
@@ -115,11 +116,33 @@
               </div>
             </a>
           </li>
+          <li>
+              <a href="../topposts/topposts.php">
+                <i class="fa fa-plus-circle">
+                </i>
+                <span>Top Posts
+                </span>
+                </span>
+              <div class="clearfix">
+              </div>
+            </a>
+          </li>
         <li>
-          <a href="#">
+          <a href="../orders/orders.php">
             <i class="fa fa-envelope">
             </i>
             <span>Orders
+            </span>
+            </span>
+          <div class="clearfix">
+          </div>
+        </a>
+      </li>
+	  <li>
+          <a href="../subscribers/subscribers.php">
+            <i class="fa fa-user">
+            </i>
+            <span>Subscribers
             </span>
             </span>
           <div class="clearfix">

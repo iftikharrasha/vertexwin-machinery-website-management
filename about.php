@@ -1,6 +1,5 @@
 <?php
 include "includes/header.php";
-include "includes/advertisements.php";
 ?>
 
 <div class="content content-upped">
@@ -16,32 +15,32 @@ include "includes/advertisements.php";
 		</div>
 		<!-- container -->
 	</section>
-	
+
 	<section class="section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-xs-12">
 					<div class="story">
-						<p>Suspendisse molestie rutrum interdum. Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris. Proin auctor sapien eu lacus congue, tincidunt luctus nisi egestas. Pellentesque venenatis risus id odio ullamcorper commodo. 
-						Mauris pellentesque sapien commodo elit condimentum porta a at purus. Nam vitae odio et augue semper ultrices. Vestibulum ut neque vel elit commodo euismod. Morbi viverra sapien eu sapien ultricies egestas. Mauris porta massa vitae euismod iaculis. Sed finibus enim eu 
-						eleifend suscipit. Suspendisse molestie rutrum interdum. Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris. Proin auctor sapien eu lacus congue, tincidunt luctus nisi egestas. Pellentesque venenatis risus id odio ullamcorper commodo. 
-						Mauris pellentesque sapien commodo elit condimentum porta a at purus. Nam vitae odio et augue semper ultrices. Vestibulum ut neque vel elit commodo euismod. Morbi viverra sapien eu sapien ultricies egestas. Mauris porta massa vitae euismod iaculis. Sed finibus enim eu 
+						<p>Suspendisse molestie rutrum interdum. Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris. Proin auctor sapien eu lacus congue, tincidunt luctus nisi egestas. Pellentesque venenatis risus id odio ullamcorper commodo.
+						Mauris pellentesque sapien commodo elit condimentum porta a at purus. Nam vitae odio et augue semper ultrices. Vestibulum ut neque vel elit commodo euismod. Morbi viverra sapien eu sapien ultricies egestas. Mauris porta massa vitae euismod iaculis. Sed finibus enim eu
+						eleifend suscipit. Suspendisse molestie rutrum interdum. Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris. Proin auctor sapien eu lacus congue, tincidunt luctus nisi egestas. Pellentesque venenatis risus id odio ullamcorper commodo.
+						Mauris pellentesque sapien commodo elit condimentum porta a at purus. Nam vitae odio et augue semper ultrices. Vestibulum ut neque vel elit commodo euismod. Morbi viverra sapien eu sapien ultricies egestas. Mauris porta massa vitae euismod iaculis. Sed finibus enim eu
 						eleifend suscipit. Suspendisse molestie rutrum interdum.</p>
-						<p>Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris. Proin auctor sapien eu lacus congue, tincidunt luctus nisi egestas. Pellentesque venenatis risus id odio ullamcorper commodo. 
-						Mauris pellentesque sapien commodo elit condimentum porta a at purus. Nam vitae odio et augue semper ultrices. Vestibulum ut neque vel elit commodo euismod. Morbi viverra sapien eu sapien ultricies egestas. Mauris porta massa vitae euismod iaculis. Sed finibus enim eu 
+						<p>Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris. Proin auctor sapien eu lacus congue, tincidunt luctus nisi egestas. Pellentesque venenatis risus id odio ullamcorper commodo.
+						Mauris pellentesque sapien commodo elit condimentum porta a at purus. Nam vitae odio et augue semper ultrices. Vestibulum ut neque vel elit commodo euismod. Morbi viverra sapien eu sapien ultricies egestas. Mauris porta massa vitae euismod iaculis. Sed finibus enim eu
 						eleifend suscipit. Suspendisse molestie rutrum interdum. Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris.</p>
 					</div>
 				</div>
-				
+
 				<div class="col-lg-6 col-md-12">
 					<div class="item-preview">
-						<img src="resource/img/sony.jpg" alt="item">
+						<img src="resource/img/company.png" alt="item">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="section">
 		<div class="container">
 			<div class="row">
@@ -51,7 +50,7 @@ include "includes/advertisements.php";
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="section">
 		   <div class="container">
 				<div class="row">

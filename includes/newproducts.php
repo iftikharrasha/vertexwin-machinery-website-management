@@ -63,7 +63,7 @@
 <?php				
 				}
 			}else {
-				echo "<span class='lead'>There's no products to show!<span>";
+				echo "<p class='lead-index'>There's no products to show!<p>";
 			}
 		}
 ?>

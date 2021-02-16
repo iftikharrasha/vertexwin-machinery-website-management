@@ -1,5 +1,5 @@
 <?php
-require_once('dbconnect.php');
+include "dbconnect.php";
 
 //redirect function
 function Redirect_To ($location) {
@@ -26,7 +26,7 @@ function Query ($query) {
 
 //admin login attemt
 function LoginAttempt($username, $password) {
-	$query = "SELECT * FROM admin_info WHERE admin_name = '$username'  AND admin_password = '$password'";
+	$query = "SELECT * FROM admin_vertex WHERE admin_name = '$username'  AND admin_password = '$password'";
 	$exec = Query($query);
 	if ($admin = mysqli_fetch_assoc($exec)) {
 		return $admin;
@@ -36,7 +36,7 @@ function LoginAttempt($username, $password) {
 }
 
 //user login attemt
-function userAttempt($username, $password) {
+/*function userAttempt($username, $password) {
 	$query = "SELECT * FROM user WHERE username = '$username'  AND password = '$password'";
 	$exec = Query($query);
 	if ($user = mysqli_fetch_assoc($exec)) {
@@ -44,7 +44,7 @@ function userAttempt($username, $password) {
 	}else {
 		return null;
 	}
-}
+}*/
 
 //connection close
 function conectionEnd($value) {

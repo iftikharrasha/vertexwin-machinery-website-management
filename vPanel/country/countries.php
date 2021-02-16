@@ -1,6 +1,6 @@
 <?php
-	require_once('../includes/sessions.php');
-	require_once('../includes/functions.php');
+	include "../includes/sessions.php";
+	include "../includes/functions.php";
 	
 	if(!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
 		header("Location:../index.php?login_first");
@@ -20,9 +20,8 @@
 		
 		if ( empty($cont_name)) {
 			$_SESSION['errorMessage'] = "Field Is Empty!";
-			Redirect_To('countries.php');
 		}else {
-			$query = "INSERT INTO countries (date_time, country_name, added_by) 
+			$query = "INSERT INTO countries (date_time, cont_title, added_by) 
 			VALUES ('$dateTime', '$cont_name', '$author')";
 			
 			$exec = Query($query);
@@ -39,7 +38,7 @@
 	if ( isset( $_POST['delcont-submit'])) {
 		$contid=$_POST['delete_id'];
 		
-		$result="DELETE FROM countries WHERE country_id='$contid'";
+		$result="DELETE FROM countries WHERE cont_id='$contid'";
 		
 		$exec = Query($result);
 		if($exec) {
@@ -61,6 +60,7 @@
     <div class="panel-body-boots">
       <div class="row">
         <div class="col-md-5 col-xs-12 well">
+      
           <h4 class="m-b-0">Add Country
           </h4>
 		  <p class="message">
@@ -106,11 +106,11 @@
 ?>
                 <tr>
                   <td> 
-					<?=$country['country_name']?>
+					<?=$country['cont_title']?>
                   </td>
                   <td class="jsgrid-align-center">
                     <form action="countries.php" method="post">
-                      <input type="hidden" name="delete_id" value="<?=$country['country_id']?>">
+                      <input type="hidden" name="delete_id" value="<?=$country['cont_id']?>">
                       <button type = "submit"  name="delcont-submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
                         <i class="fa fa-trash-o">
                         </i>

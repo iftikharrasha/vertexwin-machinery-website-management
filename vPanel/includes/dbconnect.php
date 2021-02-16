@@ -3,7 +3,7 @@
 $server = 'localhost';
 $username = 'root';
 $password = '';
-$db_name = 'vertexwinbd';
+$db_name = 'vertextest';
 $con;
 
 try{

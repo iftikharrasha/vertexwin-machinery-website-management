@@ -6,12 +6,15 @@
       <div class="col-xs-12">
         <div class="newsletter">
           <p>Subscribe to
-            <strong>VERTEX WIN
+            <strong>Vertex Win
             </strong>
           </p>
-          <form id="offer_form" onsubmit="return false">
+          <form action="index.php" method="post">
+          <p class="message">
+              				<?php echo Message(); ?>
+           				</p>
             <input class="input" type="email" id="email" name="email" placeholder="Enter Your Email">
-            <button class="newsletter-btn" value="Sign Up" name="signup_button" type="submit">
+            <button class="newsletter-btn" value="Sign Up" name="mail-submit" type="submit">
               <i class="fa fa-envelope">
               </i> Subscribe
             </button>

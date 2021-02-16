@@ -11,9 +11,9 @@
         <!-- tab -->
         <div id="tab2" class="tab-pane active">
          <!-- products-slick -->
-        <div class="products-slick" data-nav="#slick-nav-1">
+        <div class="products-slick" data-nav="#slick-nav-2">
 <?php
-		$query = "SELECT * FROM products WHERE product_id BETWEEN 96 AND 101 ORDER BY date_time DESC";
+		$query = "SELECT * FROM products WHERE top_product=1 ORDER BY date_time DESC";
 		
 		$exec = Query($query) or die(mysqli_error($con));
 		if( $exec ) {
@@ -62,7 +62,7 @@
 <?php				
 				}
 			}else {
-				echo "<span class='lead'>There's no products to show!<span>";
+				echo "<p class='lead-index'>There's no products to show for now!<p>";
 			}
 		}
 ?>

@@ -1,25 +1,30 @@
 <?php
-	require_once('../includes/sessions.php');
-	require_once('../includes/functions.php');
+	include "../includes/sessions.php";
+	include "../includes/functions.php";
 	
 	if(!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
 		header("Location:../index.php?login_first");
 	}
 	
 	if ( isset( $_POST['delproduct-submit'])) {
-		$pid=$_POST['delete_id'];
-		
-		$result="DELETE FROM products WHERE product_id='$pid'";
-		
-		$exec = Query($result);
-		if($exec) {
-			$_SESSION['successMessage'] = "Post Deleted Successfully!";
-			Redirect_To('managepost.php?deletesuccess');
-		} else {
-			$_SESSION['errorMessage'] = "Please Try Again!";
-		}
+      $pid=$_POST['delete_id'];
+      $image = $_POST['this_image'];
+      $imageUnlinkDir = "../../resource/img/" . $image;
+      if(!unlink($imageUnlinkDir)) {
+        $_SESSION['errorMessage'] = "Can not unlink file!";
+        Redirect_To('./manageproducts.php');
+      }else{
+      $result="DELETE FROM products WHERE product_id='$pid'";
+      
+      $exec = Query($result);
+        if($exec) {
+          $_SESSION['successMessage'] = "Post Deleted Successfully!";
+          Redirect_To('manageproducts.php?deletesuccess');
+        } else {
+          $_SESSION['errorMessage'] = "Please Try Again!";
+        }
+      }
 	}
-
 	include("../partpage/header.php");
 ?>
 
@@ -29,6 +34,14 @@
     <div class="panel-body-boots">
       <div class="row">
         <div class="col-xs-12">
+
+        <div class="overlaybttn">
+			<a href="#bottom">
+				<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+				<span>Bottom</span>
+			</a>
+	    </div>
+
           <div class="well">
             <h3>
               <a href="../itemadd/additem.php">
@@ -45,7 +58,7 @@
                   <?php echo Message(); ?>
         </p>
 		
-          <div class="table-responsive text-center">
+          <div class="text-center">
 <?php
 	$productNo = 1;
 	$page = 1;
@@ -65,12 +78,12 @@
 	$exec = Query($sql);
 	if (mysqli_num_rows($exec) < 1) {
 ?>
-      <p class="lead">You Have 0 Orders At This Moment!
+      <p class="lead">You Have 0 Products At This Moment!
       </p>
 <?php
 	}else{
 ?>
-            <table class="display table table-hover table-striped table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <table class="table product-table table-hover table-striped table-bordered" id="dataTable" width="100%" cellspacing="0">
               <tbody>
                 <tr>
                   <th>No.
@@ -81,9 +94,9 @@
                   </th>
                   <th>Category
                   </th>
-				  <th>Country
+				          <th>Country
                   </th>
-				  <th>Description
+				          <th>Description
                   </th>
                   <th>Feature Image
                   </th>
@@ -142,6 +155,7 @@
                   <td class="jsgrid-align-center">
                     <form action="manageproducts.php?delete_id=<?php echo $product_id;?>" method="post">
                       <input type="hidden" name="delete_id" value="<?php echo $product_id;?>">
+					  <input type="hidden" name="this_image" value="<?php echo $image;?>">
                       <button type="submit" name="delproduct-submit" class="btn btn-sm btn-info waves-effect waves-light" onclick="return confirm('Are you sure to delete this data?')">
                         <i class="fa fa-trash-o">
                         </i>
@@ -149,13 +163,12 @@
                     </form>
                   </td>
                   <td>
-                    <a href="http://localhost/vertexwin-machinery-website-management/item.php?p=<?php echo $product_id;?>">
+                    <a href="../../item.php?p=<?php echo $product_id;?>">
                       <button class="btn btn-info">Live Preview
                       </button>
                     </a>
                   </td>
                 </tr>
-                <tr>
 <?php
 			$productNo++;
 		}			
@@ -222,6 +235,14 @@
 ?>
             </ul>
           </nav>
+		  
+		  <div class="overlaybttn">
+				<a id= "bottom" href="#top">
+					<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+					<span>Top</span>
+				</a>
+		  </div>
+				
         </div>
       </div>
     </div>

@@ -87,6 +87,25 @@
           </li>
           <li>
             <a href="#">
+              <i class="fa fa-star">
+              </i>
+              <span>Sort Item
+              </span>
+              <span class="fa fa-angle-right" style="float: right">
+              </span>
+              <div class="clearfix">
+              </div>
+            </a>
+            <ul>
+              <li>
+                <a href="../topposts/topposts.php">Top Posts
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+          <li>
+            <a href="#">
               <i class="fa fa-envelope">
               </i>
               <span>Orders
@@ -99,6 +118,24 @@
             <ul>
               <li>
                 <a href="../orders/orders.php"> View Orders
+                </a>
+              </li>
+            </ul>
+          </li>
+		  <li>
+            <a href="#">
+              <i class="fa fa-user">
+              </i>
+              <span>Subscribers
+              </span>
+              <span class="fa fa-angle-right" style="float: right">
+              </span>
+              <div class="clearfix">
+              </div>
+            </a>
+            <ul>
+              <li>
+                <a href="../subscribers/subscribers.php"> View Subscribers
                 </a>
               </li>
             </ul>

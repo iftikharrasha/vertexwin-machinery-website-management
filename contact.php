@@ -1,6 +1,31 @@
 <?php
 include "includes/header.php";
-include "includes/advertisements.php";
+
+date_default_timezone_set('Asia/Manila');
+$time = time();
+
+//adding order
+if (isset($_POST['order-submit'])) {
+    $dateTime = strftime('%Y-%m-%d', $time);
+    $name = mysqli_real_escape_string($con, $_POST['name']);
+    $email = mysqli_real_escape_string($con, $_POST['email']);
+    $subject = mysqli_real_escape_string($con, $_POST['subject']);
+    $message = mysqli_real_escape_string($con, $_POST['message']);
+
+    if (empty($name)) {
+        $_SESSION['errorMessage'] = "Field Is Empty!";
+    } else {
+        $query = "INSERT INTO orders (date_time, name, subject, email, message)
+			VALUES ('$dateTime', '$name', '$subject', '$email', '$message')";
+
+        $exec = Query($query);
+        if ($exec) {
+            $_SESSION['successMessage'] = "Your Email Has Been Sent!";
+        } else {
+            $_SESSION['errorMessage'] = "Please Try Again!";
+        }
+    }
+}
 ?>
 
 <div class="content content-upped">
@@ -16,10 +41,14 @@ include "includes/advertisements.php";
 					</div>
 				</div>
 				<div class="col-sm-6 col-xs-12">
-					<form class="contact-form">
+
+					<form class="contact-form" action="contact.php" method="post">
 						<span class="contact-form-title">
 							Send your query.
 						</span>
+						<p class="message">
+              				<?php echo Message(); ?>
+           				</p>
 						<div class="input">
 							<input type="text" name="name" placeholder="Name">
 							<span class="shadow-input1"></span>
@@ -37,7 +66,7 @@ include "includes/advertisements.php";
 							<span class="shadow-input1"></span>
 						</div>
 						<div class="contact-btn">
-							<button>
+							<button type = "submit"  name="order-submit">
 								<span>
 									<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 									Send Email
@@ -50,7 +79,7 @@ include "includes/advertisements.php";
 		</div>
 		<!-- container -->
 	</section>
-	
+
 	<section class="section">
 		   <div class="container">
 				<div class="row">

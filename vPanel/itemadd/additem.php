@@ -1,6 +1,6 @@
 <?php
-	require_once('../includes/sessions.php');
-	require_once('../includes/functions.php');
+	include "../includes/sessions.php";
+	include "../includes/functions.php";
 	
 	if(!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
 		header("Location:./login.php?login_first");
@@ -9,11 +9,17 @@
 	if(isset($_POST['post-submit'])) {
 		date_default_timezone_set('Asia/Manila');
 		$time = time();
+		$views = 0;
+		$top = 0;
 		
 		$title = mysqli_real_escape_string($con, $_POST['post-title']);
 		$category = mysqli_real_escape_string($con, $_POST['post-category']);
 		$country = mysqli_real_escape_string($con, $_POST['post-country']);
 		$content = mysqli_real_escape_string($con, $_POST['post-content']);
+		
+		$catid = mysqli_real_escape_string($con, $_POST['category_id']);
+		$contid = mysqli_real_escape_string($con, $_POST['country_id']);
+		
 		$dateTime = strftime('%Y-%m-%d',$time);
 		
 		$custom_title = str_replace(' ', '', $title); //delete spaces between words
@@ -28,24 +34,21 @@
 		
 		if(empty($title)) {
 			$_SESSION['errorMessage'] = "Title Is Emtpy!";
-			Redirect_To('additem.php');
 		}else if($title_length > 50) {
 			$_SESSION['errorMessage'] = "Title Is Too Long!";
-			Redirect_To('additem.php');
 		}else if(empty($content)) {
 			$_SESSION['errorMessage'] = "Content Is Empty!";
-			Redirect_To('additem.php');
 		}else if($content_lenght > 1450) {
 			$_SESSION['errorMessage'] = "Content Is Too Long!";
-			Redirect_To('additem.php');
 		}else{
-			$query = "INSERT INTO products (date_time, product_title, product_category, product_country, added_by, product_image, product_desc) 
-			VALUES ('$dateTime', '$title', '$category', '$country', '$author', '$newfilename', '$content')";
+			$query = "INSERT INTO products (date_time, product_title, added_by, product_image, product_desc, views, top_product, cat_id, product_category, cont_id, product_country) 
+			VALUES ('$dateTime', '$title','$author', '$newfilename', '$content','$views','$top','$catid','$category','$contid','$country')";
 			
 			$exec = Query($query);
 			if ($exec){
 				move_uploaded_file($_FILES['post-image']['tmp_name'], $imageDirectory);
 				$_SESSION['successMessage'] = "Post Added Successfully!";
+				Redirect_To('../allproducts/manageproducts.php');
 			}else {
 				$_SESSION['errorMessage'] = "Something Went Wrong Please Try Again!";
 			}
@@ -65,6 +68,7 @@
 	  <form action="additem.php" method="post" name="form" enctype="multipart/form-data">
       <div class="row">
         <div class="col-lg-5">
+
           <div class="well">
             <h3>Tags</h3>  
             <p>Category</p>
@@ -74,10 +78,18 @@
 	
 	$exec = Query($sql);
 	while($row = mysqli_fetch_assoc($exec)){
-		echo "<option>$row[cat_title]</option>";
+		$catid = $row["cat_id"];
+		echo "
+			
+			<option>$row[cat_title]</option>
+		
+		";
 	}
 ?>            
             </select>
+<?php
+	/*echo " <input type='hidden' name='category_id' value='$catid'> ";*/
+?>
             <br>
             <p>Country</p>
             <select class="cat_dropdown" name="post-country" id="post-country">
@@ -86,15 +98,28 @@
 	
 	$exec = Query($sql);
 	while($row = mysqli_fetch_assoc($exec)){
-		echo "<option>$row[country_name]</option>";
+		$contid = $row["cont_id"];
+		echo "
+			
+			<option>$row[cont_title]</option>
+			
+		";
 	}
 ?>             
             </select>
+<?php
+	/*echo " <input type='hidden' name='country_id' value='$contid'> ";*/
+?>
+			 <p>Optimize image before uploading:
+			  <button type="button"> <a href="https://tinypng.com/" target="_blank">tinypng</a> 
+				</button>
+              </p>
 			 <p>Add Image
               </p>
               <div style="background-color:#CCC">
                 <input type="file" style="width:100%" name="post-image" class="btn thumbnail" id="picture">
               </div>
+			  
           </div>          
         </div>
         <div class="col-lg-7">

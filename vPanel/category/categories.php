@@ -1,6 +1,6 @@
 <?php
-	require_once('../includes/sessions.php');
-	require_once('../includes/functions.php');
+	include "../includes/sessions.php";
+	include "../includes/functions.php";
 	
 	if(!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
 		header("Location:../index.php?login_first");
@@ -20,7 +20,6 @@
 		
 		if ( empty($cat_name)) {
 			$_SESSION['errorMessage'] = "Field Is Empty!";
-			Redirect_To('categories.php');
 		}else {
 			$query = "INSERT INTO categories (date_time, cat_title, added_by) 
 			VALUES ('$dateTime', '$cat_name', '$author')";
@@ -61,6 +60,7 @@
     <div class="panel-body-boots">
       <div class="row">
         <div class="col-md-5 col-xs-12 well">
+      
           <h4 class="m-b-0">Add Category
           </h4>
 		  <p class="message">
