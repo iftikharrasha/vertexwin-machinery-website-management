@@ -55,7 +55,7 @@ if (isset($_POST['submit'])) {
 
 			  <p class="message">
 				<?php echo Message(); ?>
-			</p>
+			  </p>
 
               <div style="margin-bottom: 10px;">
                 <input type="text" id="userName" name="username" class="form-control" placeholder="Username: admin">

@@ -9,6 +9,7 @@
 	if(isset($_POST['post-submit'])) {
 		date_default_timezone_set('Asia/Manila');
 		$time = time();
+
 		$views = 0;
 		$top = 0;
 		
