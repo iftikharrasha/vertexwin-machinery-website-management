@@ -49,10 +49,23 @@
 
 6. Run the site at localhost
 
-    The site is now running at `http://localhost/vertexwin-machinery-website-management`!
+    The site is now running at `http://localhost/vertexwin-machinery-website-management`
+
+
+7. To see the hidden Admin Panel go to the link below
+
+    The site is now running at `http://localhost/vpanel/`
+
+
+8. Admin demo credentials
+
+    ```shell
+    Username: admin
+    Password: password
+    ```
     
 
-7.  **BINGO! Open the source code and start editing!**
+9.  **BINGO! Open the source code and start editing!**
 
 
  
